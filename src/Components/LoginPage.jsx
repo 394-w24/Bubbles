@@ -16,7 +16,9 @@ const signIn = () => {
             });
           }
         })
-        .catch((error) => console.error(`Error while signing in: ${error}`));
+        .catch((error) =>
+          console.error(`Error while signing in: ${error.message}`)
+        );
     })
     .catch((error) => {
       alert(error.message);
