@@ -5,6 +5,9 @@ import { getDatabase, onValue, ref, update } from "firebase/database";
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { useState, useEffect, useCallback } from "react";
 
+import { getStorage } from "firebase/storage";
+
+
 import {
   getAuth,
   GoogleAuthProvider,
@@ -87,3 +90,6 @@ export const useDbUpdate = (path) => {
 
   return [updateData, result];
 };
+
+
+export const storage = getStorage(firebase);
