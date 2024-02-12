@@ -5,3 +5,15 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-user-avatar > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}

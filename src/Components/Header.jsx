@@ -1,5 +1,7 @@
 import { firebaseSignOut } from "../Utilities/firebase";
-const Header = () => {
+import "./Header.css";
+
+const Header = ({ user }) => {
   return (
     <header className="header">
       <div className="header-sign-out">
@@ -9,7 +11,7 @@ const Header = () => {
         <h2>Bubbles</h2>
       </div>
       <div className="header-user-avatar">
-        <img />
+        <img src={user.profile_picture} />
       </div>
     </header>
   );

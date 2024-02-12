@@ -1,8 +1,9 @@
 import "./App.css";
 import Router from "./Router";
 import { BrowserRouter } from "react-router-dom";
-import { useAuthState } from "./Utilities/firebase";
+import { useAuthState, useDbData } from "./Utilities/firebase";
 import LoginPage from "./Components/LoginPage";
+import Loading from "./Components/Loading";
 
 // Camel case yourName for js and jsx
 // Kebab case for css ex: app-content
@@ -18,14 +19,18 @@ import LoginPage from "./Components/LoginPage";
 
 const App = () => {
   const [user] = useAuthState();
-  // const user = undefined;
+  const [userData, userDataError] = useDbData(`/users/${user?.uid}`);
 
   return user ? (
-    <div className="app">
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-    </div>
+    userData ? (
+      <div className="app">
+        <BrowserRouter>
+          <Router user={userData} />
+        </BrowserRouter>
+      </div>
+    ) : (
+      <Loading />
+    )
   ) : (
     <LoginPage />
   );
