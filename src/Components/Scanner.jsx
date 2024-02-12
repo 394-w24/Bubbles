@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
-import Webcam from 'react-webcam';
-import { storage } from '../Utilities/firebase';
-import { ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
+import React, { useState } from "react";
+import Webcam from "react-webcam";
+import { storage } from "../Utilities/firebase";
+import {
+  ref as storageRef,
+  uploadBytes,
+  getDownloadURL,
+} from "firebase/storage";
 
 import Header from "./Header";
 import NavBar from "./NavBar";
 import "./Scanner.css";
 
 const Scanner = ({ user }) => {
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState("");
   const webcamRef = React.useRef(null);
-  
+
   // function to capture image from Webcam
   const capture = React.useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
@@ -20,54 +24,54 @@ const Scanner = ({ user }) => {
   }, [webcamRef]);
 
   // function to handle file upload (e.g., from input field)
-  const handleFileUpload = event => {
+  const handleFileUpload = (event) => {
     const file = event.target.files[0];
     uploadFileToFirebase(file);
   };
 
   const base64StringToBlob = (base64, contentType) => {
-    const byteCharacters = atob(base64.split(',')[1]);
+    const byteCharacters = atob(base64.split(",")[1]);
     const byteArrays = [];
-  
+
     for (let offset = 0; offset < byteCharacters.length; offset += 512) {
       const slice = byteCharacters.slice(offset, offset + 512);
-  
+
       const byteNumbers = new Array(slice.length);
       for (let i = 0; i < slice.length; i++) {
         byteNumbers[i] = slice.charCodeAt(i);
       }
-  
+
       const byteArray = new Uint8Array(byteNumbers);
       byteArrays.push(byteArray);
     }
-  
-    return new Blob(byteArrays, {type: contentType});
+
+    return new Blob(byteArrays, { type: contentType });
   };
-  
-
-
 
   // Upload image to Firebase
   const uploadImageToFirebase = async (imageSrc) => {
     // Convert imageSrc to file/blob here and upload to Firebase
     // Implementation depends on your Firebase storage setup
     // Convert the base64 string to a Blob
-    const imageBlob = base64StringToBlob(imageSrc, 'image/jpeg');
+    const imageBlob = base64StringToBlob(imageSrc, "image/jpeg");
 
     // Create a reference to 'images/fileName.jpg' in Firebase Storage
-    const storageReference = ref(storage, `images/${new Date().toISOString()}.jpg`);
+    const storageReference = ref(
+      storage,
+      `images/${new Date().toISOString()}.jpg`
+    );
 
     try {
       // Upload the Blob to Firebase Storage
       const snapshot = await uploadBytes(storageReference, imageBlob);
-      console.log('Uploaded a blob or file!', snapshot);
+      console.log("Uploaded a blob or file!", snapshot);
 
       // Optionally, get the download URL of the uploaded file
       const downloadURL = await getDownloadURL(snapshot.ref);
-      console.log('File available at', downloadURL);
+      console.log("File available at", downloadURL);
       // You can store this URL in your database or state to display the image later
     } catch (error) {
-      console.error('Upload failed', error);
+      console.error("Upload failed", error);
     }
   };
 
@@ -76,11 +80,11 @@ const Scanner = ({ user }) => {
     const storageReference = storageRef(storage, `images/${file.name}`);
     try {
       const snapshot = await uploadBytes(storageReference, file);
-      console.log('Uploaded a blob or file!', snapshot);
+      console.log("Uploaded a blob or file!", snapshot);
     } catch (error) {
-      console.error('Upload failed', error);
+      console.error("Upload failed", error);
     }
-};
+  };
 
   return (
     <div className="scanner">
@@ -89,18 +93,20 @@ const Scanner = ({ user }) => {
       {image ? (
         <div>
           <img src={image} alt="Captured" />
-          <button onClick={() => setImage('')}>Retake Image</button>
+          <button onClick={() => setImage("")}>Retake Image</button>
         </div>
       ) : (
-        <div>
+        <div className="scanner-webcam-div">
           <Webcam
             audio={false}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
-            className="webcam"
+            className="scanner-webcam"
           />
-          <button onClick={capture}>Capture Photo</button>
-          <input type="file" accept="image/*" onChange={handleFileUpload} />
+          <div className="scanner-webcam-controls">
+            <button onClick={capture}>Capture Photo</button>
+            <input type="file" accept="image/*" onChange={handleFileUpload} />
+          </div>
         </div>
       )}
     </div>
