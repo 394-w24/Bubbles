@@ -1,6 +1,6 @@
 // Firebase
 import { initializeApp } from "firebase/app";
-import { getDatabase, onValue, ref, update, get } from "firebase/database";
+import { getDatabase, onValue, ref, update } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { useState, useEffect, useCallback } from "react";
@@ -14,14 +14,14 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyApxhsea_WmX8nFSK7zMuut4S27u8Os914",
-  authDomain: "cs394fitnessapp.firebaseapp.com",
-  databaseURL: "https://cs394fitnessapp-default-rtdb.firebaseio.com",
-  projectId: "cs394fitnessapp",
-  storageBucket: "cs394fitnessapp.appspot.com",
-  messagingSenderId: "279762030876",
-  appId: "1:279762030876:web:94a6fa40e0ec130e41aad9",
-  measurementId: "G-X5FV6V3H9T",
+  apiKey: "AIzaSyB5RqjQTkkCE9ziICzevj2b1kBowDA7u9E",
+  authDomain: "bubbles-7ba5c.firebaseapp.com",
+  databaseURL: "https://bubbles-7ba5c-default-rtdb.firebaseio.com",
+  projectId: "bubbles-7ba5c",
+  storageBucket: "bubbles-7ba5c.appspot.com",
+  messagingSenderId: "560959266079",
+  appId: "1:560959266079:web:a9a0ea5c132c565246a42a",
+  measurementId: "G-G9MM5BMB2W",
 };
 
 // Initialize Firebase
@@ -35,11 +35,9 @@ export const database = getDatabase(firebase);
 export const signInWithGoogle = () =>
   signInWithPopup(getAuth(firebase), new GoogleAuthProvider());
 
-const firebaseSignOut = () => {
+export const firebaseSignOut = () => {
   signOut(getAuth(firebase));
 };
-
-export { firebaseSignOut as signOut };
 
 export const useAuthState = () => {
   const [user, setUser] = useState();

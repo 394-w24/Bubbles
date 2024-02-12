@@ -1,3 +1,7 @@
+import Header from "./Header";
+import NavBar from "./NavBar";
+import "./Scanner.css";
+
 const Scanner = () => {
   /* 
   TO-DO(Marvin): 
@@ -6,7 +10,12 @@ const Scanner = () => {
   */
   /* After user uploads image, i.e. clicks on upload, we need to hard code translations and instructions*/
 
-  return <div> This is the scanner component</div>;
+  return (
+    <div className="scanner">
+      <Header />
+      <NavBar />
+    </div>
+  );
 };
 
 export default Scanner;

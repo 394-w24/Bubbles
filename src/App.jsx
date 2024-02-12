@@ -1,10 +1,12 @@
-import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Scanner from "./Components/Scanner";
+import Router from "./Router";
+import { BrowserRouter } from "react-router-dom";
+import { useAuthState } from "./Utilities/firebase";
+import LoginPage from "./Components/LoginPage";
+
 // Camel case yourName for js and jsx
 // Kebab case for css ex: app-content
-// Component naming camelCase but first name capital like: AppContent
+// Component naming camelCase but first letter capital like: AppContent
 
 /*
   Jason: Using Bootstrap for styling
@@ -15,12 +17,17 @@ import Scanner from "./Components/Scanner";
 */
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [user] = useAuthState();
+  // const user = undefined;
 
-  return (
+  return user ? (
     <div className="app">
-      <Scanner />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </div>
+  ) : (
+    <LoginPage />
   );
 };
 
