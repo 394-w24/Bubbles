@@ -10,10 +10,22 @@ import {
 import Header from "./Header";
 import NavBar from "./NavBar";
 import "./Scanner.css";
+import DummyTranslations from "./DummyTranslation";
+import DummyInstructions from "./DummyInstructions";
+import Loading from "./Loading";
 
 const Scanner = ({ user }) => {
   const [image, setImage] = useState("");
   const webcamRef = React.useRef(null);
+  const [imageUploaded, setImageUploaded] = useState(false);
+  const [imageLoading, setImageLoading] = useState(true);
+
+  const dummyProcessImage = () => {
+    setImageUploaded(true);
+    setTimeout(() => {
+      setImageLoading(false);
+    }, 3000);
+  };
 
   // function to capture image from Webcam
   const capture = React.useCallback(() => {
@@ -56,7 +68,7 @@ const Scanner = ({ user }) => {
     const imageBlob = base64StringToBlob(imageSrc, "image/jpeg");
 
     // Create a reference to 'images/fileName.jpg' in Firebase Storage
-    const storageReference = ref(
+    const storageReference = storageRef(
       storage,
       `images/${new Date().toISOString()}.jpg`
     );
@@ -89,8 +101,7 @@ const Scanner = ({ user }) => {
   return (
     <div className="scanner">
       <Header user={user} />
-      <NavBar />
-      {image ? (
+      {/* {image ? (
         <div>
           <img src={image} alt="Captured" />
           <button onClick={() => setImage("")}>Retake Image</button>
@@ -107,8 +118,40 @@ const Scanner = ({ user }) => {
             <button onClick={capture}>Capture Photo</button>
             <input type="file" accept="image/*" onChange={handleFileUpload} />
           </div>
+          <div className="scanner-webcam-controls">
+            <button onClick={dummyProcessImage}>Capture Photo</button>
+            <input type="file" accept="image/*" onChange={dummyProcessImage} />
+          </div>
+        </div>
+      )} */}
+
+      {imageUploaded ? (
+        <div className="scanner-content">
+          {imageLoading ? (
+            <Loading />
+          ) : (
+            <>
+              <DummyTranslations />
+              <DummyInstructions />
+            </>
+          )}
+        </div>
+      ) : (
+        <div className="scanner-webcam-div">
+          <Webcam
+            audio={false}
+            ref={webcamRef}
+            screenshotFormat="image/jpeg"
+            className="scanner-webcam"
+          />
+          <div className="scanner-webcam-controls">
+            <button onClick={dummyProcessImage}>Capture Photo</button>
+            <input type="file" accept="image/*" onChange={dummyProcessImage} />
+          </div>
         </div>
       )}
+
+      <NavBar />
     </div>
   );
 };

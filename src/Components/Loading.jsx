@@ -10,7 +10,14 @@ const Loading = () => {
         height: "100%",
       }}
     >
-      <div style={{ textAlign: "center" }}>
+      <div
+        style={{
+          textAlign: "center",
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <div
           style={{
             border: "4px solid #f3f3f3",
