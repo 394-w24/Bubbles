@@ -6,7 +6,6 @@ import {
   uploadBytes,
   getDownloadURL,
 } from "firebase/storage";
-
 import Header from "./Header";
 import NavBar from "./NavBar";
 import "./Scanner.css";

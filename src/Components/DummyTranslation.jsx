@@ -1,3 +1,5 @@
+import "./DummyTranslations.css";
+
 const DummyTranslations = () => {
   return (
     <div className="dummy-translations">

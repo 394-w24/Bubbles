@@ -1,6 +1,8 @@
+import "./DummyInstructions.css";
+
 const DummyInstructions = () => {
   return (
-    <div>
+    <div className="dummy-instructions">
       <h4>Instructions</h4>
       <ol>
         <li>
