@@ -31,7 +31,8 @@
   width: 200px;
   height: 200px;
   color: white;
-  background-color: #4e2a84;
+  /* background-color: #4e2a84; */
+  background-color: rgb(152, 213, 233);
   border-radius: 10px;
   border: none;
 }
