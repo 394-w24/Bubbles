@@ -1,9 +1,12 @@
 .header {
-  width: 100%;
-  height: 80px;
+  height: 60px; /* A more suitable height for mobile touch targets */
+  padding: 0 15px; /* Side padding for some breathing room */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #a4e6ff; /* This sets a light blue background similar to the image */
+  border-bottom: 1.5px solid #2b4a6a; /* Adjusts the thickness and color as needed */
+  
 }
 
 .header > div {
@@ -12,8 +15,26 @@
   justify-content: center;
 }
 
-.header-user-avatar > img {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+.header-title {
+  font-size: 20px; 
+  flex-grow: 1;
+  text-align: center;
+  font-family: 'Arial', sans-serif; 
+  color: white; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); 
+
 }
+
+.header-user-avatar > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; /* Adjust to 50% for a round shape */
+}
+
+
+
+.header-sign-out {
+  min-width: 48px; /* Minimum touch target size */
+  min-height: 48px; /* Minimum touch target size */
+}
+
