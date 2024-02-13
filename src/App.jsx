@@ -21,18 +21,20 @@ const App = () => {
   const [user] = useAuthState();
   const [userData, userDataError] = useDbData(`/users/${user?.uid}`);
 
-  return user ? (
-    userData ? (
-      <div className="app">
-        <BrowserRouter>
-          <Router user={userData} />
-        </BrowserRouter>
-      </div>
-    ) : (
-      <Loading />
-    )
-  ) : (
-    <LoginPage />
+  return (
+    <div className="app">
+      {user ? (
+        userData ? (
+          <BrowserRouter>
+            <Router user={userData} />
+          </BrowserRouter>
+        ) : (
+          <Loading />
+        )
+      ) : (
+        <LoginPage />
+      )}
+    </div>
   );
 };
 

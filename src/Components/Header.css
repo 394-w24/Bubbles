@@ -6,23 +6,29 @@
   justify-content: space-evenly;
   background-color: #a4e6ff; /* This sets a light blue background similar to the image */
   border-bottom: 1.5px solid #2b4a6a; /* Adjusts the thickness and color as needed */
-  
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .header > div {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
 
 .header-title {
-  font-size: 20px; 
+  font-size: 20px;
   flex-grow: 1;
   text-align: center;
-  font-family: 'Arial', sans-serif; 
-  color: white; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); 
+  font-family: "Arial", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
 
+.header-title > h {
+  margin: 0px;
 }
 
 .header-user-avatar > img {
@@ -31,10 +37,7 @@
   border-radius: 50%; /* Adjust to 50% for a round shape */
 }
 
-
-
 .header-sign-out {
   min-width: 48px; /* Minimum touch target size */
   min-height: 48px; /* Minimum touch target size */
 }
-

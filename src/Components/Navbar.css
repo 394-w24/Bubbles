@@ -25,10 +25,6 @@
   cursor: pointer;
 }
 
-.nav-bar button {
-  font-size: x-small;
-}
-
 /* Navbar.css */
 .nav-bar {
   display: flex;

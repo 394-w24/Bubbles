@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import Header from "./Header";
+import "./Help.css";
 
 const Help = ({ user }) => {
   return (

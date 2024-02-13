@@ -5,13 +5,12 @@ import Header from "./Header";
 import NavBar from "./NavBar";
 import DummyTranslations from "./DummyTranslation";
 import DummyInstructions from "./DummyInstructions";
+import "./Symbols.css";
 
 const Symbols = ({ user }) => {
   return (
     <div className="symbols">
       <Header user={user} />
-      <DummyTranslations />
-      <DummyInstructions />
       <NavBar />
     </div>
   );
