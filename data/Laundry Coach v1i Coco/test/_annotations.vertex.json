@@ -1,0 +1,2727 @@
+[
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img83_jpg.rf.83882310990c4729702fdbdc88fb8067.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 445,
+                "yMin": 299,
+                "xMax": 512.5699999999999,
+                "yMax": 345.694,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_iron",
+                "xMin": 374,
+                "yMin": 303,
+                "xMax": 448.327,
+                "yMax": 345.756,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 259,
+                "yMin": 310,
+                "xMax": 327.415,
+                "yMax": 352.756,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "hand_wash",
+                "xMin": 195,
+                "yMin": 312,
+                "xMax": 276.929,
+                "yMax": 355.881,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 327,
+                "yMin": 312,
+                "xMax": 374.5,
+                "yMax": 342.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_flat",
+                "xMin": 320,
+                "yMin": 347,
+                "xMax": 377.5,
+                "yMax": 378,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/istockphoto-903427464-612x612_jpeg.rf.80f6bb55bae08d434a00d476ac56653c.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img33_jpg.rf.4169f5f205a1c52094c82116d4be1b68.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "40C",
+                "xMin": 46,
+                "yMin": 84,
+                "xMax": 152.5,
+                "yMax": 162.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 52,
+                "yMin": 169,
+                "xMax": 142.5,
+                "yMax": 244,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 54,
+                "yMin": 255,
+                "xMax": 144,
+                "yMax": 343,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 60,
+                "yMin": 358,
+                "xMax": 139,
+                "yMax": 432.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img98_jpg.rf.3d9cc01a65cbf70e29dd5f9d694cab27.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "bleach",
+                "xMin": 213,
+                "yMin": 153,
+                "xMax": 278.5,
+                "yMax": 289.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_medium",
+                "xMin": 273,
+                "yMin": 81,
+                "xMax": 351.5,
+                "yMax": 225.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "60C",
+                "xMin": 86,
+                "yMin": 206,
+                "xMax": 198,
+                "yMax": 367.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_high",
+                "xMin": 354,
+                "yMin": 28,
+                "xMax": 440,
+                "yMax": 169.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/171_jpg.rf.5017627af1dd345f298cac5525123722.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img99_jpg.rf.200e37fc64cddfc4b10825cb8a2a7958.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "40C",
+                "xMin": 103,
+                "yMin": 345,
+                "xMax": 166.441,
+                "yMax": 403.041,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 154,
+                "yMin": 360,
+                "xMax": 221.671,
+                "yMax": 412.119,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 244,
+                "yMin": 396,
+                "xMax": 309.027,
+                "yMax": 444.39300000000003,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 289,
+                "yMin": 408,
+                "xMax": 360.371,
+                "yMax": 460.119,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 206,
+                "yMin": 386,
+                "xMax": 255.5,
+                "yMax": 417,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img97_jpg.rf.1b87dabb9ac69edb7ee2d1f4fd635c5d.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 485,
+                "yMin": 58,
+                "xMax": 605.103,
+                "yMax": 132.518,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 355,
+                "yMin": 64,
+                "xMax": 478.83299999999997,
+                "yMax": 137.422,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 121,
+                "yMin": 73,
+                "xMax": 232.877,
+                "yMax": 148.614,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "30C",
+                "xMin": 13,
+                "yMin": 80,
+                "xMax": 141.055,
+                "yMax": 142.463,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 247,
+                "yMin": 77,
+                "xMax": 339.5,
+                "yMax": 140,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/37_jpg.rf.0b8b0c505f6c0d5849102f8837d58c4f.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/laundry-symbols-explained-1-1574266622_png.rf.7602fc02bb470919ae74b7cd3e9cca4d.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "ER_40",
+                "xMin": 494,
+                "yMin": 495,
+                "xMax": 576,
+                "yMax": 559,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_39",
+                "xMin": 352,
+                "yMin": 495,
+                "xMax": 435.5,
+                "yMax": 563.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_38",
+                "xMin": 200,
+                "yMin": 495,
+                "xMax": 289.5,
+                "yMax": 560.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_37",
+                "xMin": 59,
+                "yMin": 492,
+                "xMax": 152,
+                "yMax": 560,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_52",
+                "xMin": 66,
+                "yMin": 283,
+                "xMax": 141,
+                "yMax": 347,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_27",
+                "xMin": 200,
+                "yMin": 282,
+                "xMax": 281,
+                "yMax": 347,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_26",
+                "xMin": 359,
+                "yMin": 282,
+                "xMax": 431.5,
+                "yMax": 351.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_41",
+                "xMin": 498,
+                "yMin": 281,
+                "xMax": 569.5,
+                "yMax": 355,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_2",
+                "xMin": 70,
+                "yMin": 108,
+                "xMax": 149.5,
+                "yMax": 162,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_7",
+                "xMin": 219,
+                "yMin": 104,
+                "xMax": 292,
+                "yMax": 171.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_11",
+                "xMin": 368,
+                "yMin": 107,
+                "xMax": 441,
+                "yMax": 168.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_15",
+                "xMin": 498,
+                "yMin": 112,
+                "xMax": 576,
+                "yMax": 170.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img24_jpg.rf.6074d6b9844068c8d1c7833062ea244c.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "iron_low",
+                "xMin": 357,
+                "yMin": 73,
+                "xMax": 448.5,
+                "yMax": 193.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 0,
+                "yMin": 0,
+                "xMax": 73,
+                "yMax": 96,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "non_chlorine_bleach",
+                "xMin": 88,
+                "yMin": 12,
+                "xMax": 160.5,
+                "yMax": 123,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 186,
+                "yMin": 33,
+                "xMax": 262.5,
+                "yMax": 147,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_flat_in_shade",
+                "xMin": 274,
+                "yMin": 64,
+                "xMax": 350.5,
+                "yMax": 161,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_clean_any_solvent_except_trichloroethylene",
+                "xMin": 461,
+                "yMin": 106,
+                "xMax": 532,
+                "yMax": 206,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img_jpg.rf.6139a2c09e2f9b6c0d467e8f1b8de9e6.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "40C",
+                "xMin": 136,
+                "yMin": 406,
+                "xMax": 215,
+                "yMax": 493,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 216,
+                "yMin": 410,
+                "xMax": 281,
+                "yMax": 494,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 363,
+                "yMin": 412,
+                "xMax": 426.5,
+                "yMax": 494.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 287,
+                "yMin": 416,
+                "xMax": 357.5,
+                "yMax": 492.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 434,
+                "yMin": 410,
+                "xMax": 488,
+                "yMax": 481,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/98_jpg.rf.547b3f45bd0daaa10b6da1c0090c4f06.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img41_jpg.rf.0631fe5e9c759eec151a8d43eb6c776a.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "40C",
+                "xMin": 118,
+                "yMin": 152,
+                "xMax": 201.841,
+                "yMax": 243.34300000000002,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 183,
+                "yMin": 182,
+                "xMax": 248.119,
+                "yMax": 271.693,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 235,
+                "yMin": 207,
+                "xMax": 303.375,
+                "yMax": 301.712,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 300,
+                "yMin": 237,
+                "xMax": 356.979,
+                "yMax": 318.15999999999997,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 347,
+                "yMin": 265,
+                "xMax": 397.5,
+                "yMax": 329,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/20_jpg.rf.42ae49bb669e27cbba552ea035bb1b2d.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img53_jpg.rf.0857a4dde62df35cdc2f002b47b3a2eb.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 210,
+                "yMin": 215,
+                "xMax": 246.518,
+                "yMax": 245.605,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 410,
+                "yMin": 226,
+                "xMax": 441.775,
+                "yMax": 243.703,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 188,
+                "yMin": 230,
+                "xMax": 214.933,
+                "yMax": 251.303,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 393,
+                "yMin": 236,
+                "xMax": 416.92,
+                "yMax": 254.603,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 127,
+                "yMin": 254,
+                "xMax": 159.675,
+                "yMax": 280.371,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 349,
+                "yMin": 258,
+                "xMax": 376.279,
+                "yMax": 277.803,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 322,
+                "yMin": 267,
+                "xMax": 351.977,
+                "yMax": 288.003,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 94,
+                "yMin": 261,
+                "xMax": 129.373,
+                "yMax": 294.005,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 156,
+                "yMin": 237,
+                "xMax": 187,
+                "yMax": 266,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 369,
+                "yMin": 244,
+                "xMax": 398,
+                "yMax": 270.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img16_jpg.rf.16ffdec6a70c791bc02ef18690d3df1a.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_bleach",
+                "xMin": 211,
+                "yMin": 188,
+                "xMax": 236,
+                "yMax": 218.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 258,
+                "yMin": 199,
+                "xMax": 287.5,
+                "yMax": 235.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 287,
+                "yMin": 207,
+                "xMax": 316.5,
+                "yMax": 238,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "30C",
+                "xMin": 184,
+                "yMin": 181,
+                "xMax": 209.5,
+                "yMax": 210.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 237,
+                "yMin": 195,
+                "xMax": 255.5,
+                "yMax": 225.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img21_jpg.rf.191bd273746b3f54e89973bc48af70fd.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "30C",
+                "xMin": 162,
+                "yMin": 501,
+                "xMax": 219.5,
+                "yMax": 549,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 227,
+                "yMin": 504,
+                "xMax": 281,
+                "yMax": 551.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_iron",
+                "xMin": 355,
+                "yMin": 501,
+                "xMax": 415,
+                "yMax": 547,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 297,
+                "yMin": 504,
+                "xMax": 343.5,
+                "yMax": 546.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "line_dry",
+                "xMin": 433,
+                "yMin": 504,
+                "xMax": 469,
+                "yMax": 542.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/5_jpg.rf.5deaa3569d13877aa3b5b09e25f116f4.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "ER_15",
+                "xMin": 12,
+                "yMin": 213,
+                "xMax": 78.5,
+                "yMax": 262,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_18",
+                "xMin": 92,
+                "yMin": 209,
+                "xMax": 158,
+                "yMax": 248.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_37",
+                "xMin": 170,
+                "yMin": 196,
+                "xMax": 241.5,
+                "yMax": 239,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_42",
+                "xMin": 253,
+                "yMin": 181,
+                "xMax": 313.5,
+                "yMax": 220.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_29",
+                "xMin": 332,
+                "yMin": 169,
+                "xMax": 399,
+                "yMax": 213.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/68_jpg.rf.0e93f46155f979681ea9fd86e758027c.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "ER_27",
+                "xMin": 539,
+                "yMin": 205,
+                "xMax": 622.357,
+                "yMax": 298.272,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_5",
+                "xMin": 152,
+                "yMin": 133,
+                "xMax": 275.5,
+                "yMax": 219.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_18",
+                "xMin": 251,
+                "yMin": 135,
+                "xMax": 359.798,
+                "yMax": 234.216,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_38",
+                "xMin": 361,
+                "yMin": 173,
+                "xMax": 463.5,
+                "yMax": 249,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_42",
+                "xMin": 472,
+                "yMin": 190,
+                "xMax": 555,
+                "yMax": 263.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img4_jpg.rf.340b779dbd3792c1c52032b1478b3c6e.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "iron_high",
+                "xMin": 258,
+                "yMin": 161,
+                "xMax": 388.884,
+                "yMax": 324.491,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 137,
+                "yMin": 220,
+                "xMax": 251.797,
+                "yMax": 388.094,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "60C",
+                "xMin": 0,
+                "yMin": 269,
+                "xMax": 126.765,
+                "yMax": 427.005,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_clean_any_solvent_except_trichloroethylene",
+                "xMin": 393,
+                "yMin": 112,
+                "xMax": 483.5,
+                "yMax": 241.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_medium",
+                "xMin": 503,
+                "yMin": 62,
+                "xMax": 598,
+                "yMax": 194,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img88_jpg.rf.01bf8246256f07cd83cfad7dd2814846.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "40C",
+                "xMin": 214,
+                "yMin": 157,
+                "xMax": 271,
+                "yMax": 211.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 280,
+                "yMin": 158,
+                "xMax": 319,
+                "yMax": 212,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 329,
+                "yMin": 159,
+                "xMax": 371,
+                "yMax": 210.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 383,
+                "yMin": 161,
+                "xMax": 426,
+                "yMax": 211,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_clean_any_solvent_except_trichloroethylene",
+                "xMin": 434,
+                "yMin": 163,
+                "xMax": 470,
+                "yMax": 214,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img10_jpg.rf.8618ed34827c943ec00e74433f8a9a77.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 447,
+                "yMin": 330,
+                "xMax": 551,
+                "yMax": 402.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 284,
+                "yMin": 330,
+                "xMax": 450,
+                "yMax": 419,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 137,
+                "yMin": 347,
+                "xMax": 287,
+                "yMax": 424.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "non_chlorine_bleach",
+                "xMin": 173,
+                "yMin": 431,
+                "xMax": 298.5,
+                "yMax": 503.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 311,
+                "yMin": 424,
+                "xMax": 404,
+                "yMax": 490.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "drip_dry",
+                "xMin": 421,
+                "yMin": 422,
+                "xMax": 525.5,
+                "yMax": 488,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img52_jpg.rf.2486fba4fee1cfc16b904041e028207b.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "30C",
+                "xMin": 391,
+                "yMin": 219,
+                "xMax": 441.426,
+                "yMax": 263.704,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "hand_wash",
+                "xMin": 436,
+                "yMin": 233,
+                "xMax": 472.739,
+                "yMax": 268.971,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 213,
+                "yMin": 231,
+                "xMax": 257.663,
+                "yMax": 272.82,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 468,
+                "yMin": 239,
+                "xMax": 519.146,
+                "yMax": 277.498,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 517,
+                "yMin": 242,
+                "xMax": 563.824,
+                "yMax": 285.006,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 163,
+                "yMin": 251,
+                "xMax": 214.14600000000002,
+                "yMax": 291.488,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_iron",
+                "xMin": 408,
+                "yMin": 261,
+                "xMax": 459.146,
+                "yMax": 301.495,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "hand_wash",
+                "xMin": 137,
+                "yMin": 264,
+                "xMax": 169.663,
+                "yMax": 301.494,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "30C",
+                "xMin": 94,
+                "yMin": 270,
+                "xMax": 135.321,
+                "yMax": 316.146,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_iron",
+                "xMin": 120,
+                "yMin": 300,
+                "xMax": 166.824,
+                "yMax": 336.052,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "line_dry",
+                "xMin": 168,
+                "yMin": 288,
+                "xMax": 203,
+                "yMax": 320.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 204,
+                "yMin": 275,
+                "xMax": 237,
+                "yMax": 307.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 497,
+                "yMin": 277,
+                "xMax": 530,
+                "yMax": 310.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "line_dry",
+                "xMin": 456,
+                "yMin": 271,
+                "xMax": 491.5,
+                "yMax": 306,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/100_jpg.rf.14c405868f6d00e79b7eb6c2675d4e3e.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img46_jpg.rf.80254dd60357c662c79a55a81f6b4b84.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "hand_wash",
+                "xMin": 218,
+                "yMin": 233,
+                "xMax": 253.5,
+                "yMax": 261,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 260,
+                "yMin": 230,
+                "xMax": 291,
+                "yMax": 260.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 299,
+                "yMin": 230,
+                "xMax": 330.5,
+                "yMax": 261.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_iron",
+                "xMin": 340,
+                "yMin": 232,
+                "xMax": 372.5,
+                "yMax": 261.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 381,
+                "yMin": 231,
+                "xMax": 411,
+                "yMax": 259,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img56_jpg.rf.9a0da77c73fff5e3a08d91a6e8228a6b.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 394,
+                "yMin": 119,
+                "xMax": 466.216,
+                "yMax": 232.1,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 356,
+                "yMin": 155,
+                "xMax": 424.313,
+                "yMax": 272.579,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 300,
+                "yMin": 186,
+                "xMax": 369.075,
+                "yMax": 302.459,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 232,
+                "yMin": 225,
+                "xMax": 316.127,
+                "yMax": 343.699,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 451,
+                "yMin": 80,
+                "xMax": 507.5,
+                "yMax": 182.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/istockphoto-1178537453-612x612_jpeg.rf.94e91856bd445dbd7ec76197d75c3309.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img18_jpg.rf.aefdd8347dff07e472121dabc601e4ec.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "60C",
+                "xMin": 91,
+                "yMin": 211,
+                "xMax": 169,
+                "yMax": 293.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 91,
+                "yMin": 412,
+                "xMax": 161,
+                "yMax": 479,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_medium",
+                "xMin": 96,
+                "yMin": 319,
+                "xMax": 155,
+                "yMax": 383,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img14_jpg.rf.9b244f0a32beb89063147585c3f0cd12.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_iron",
+                "xMin": 320,
+                "yMin": 259,
+                "xMax": 365,
+                "yMax": 312.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "non_chlorine_bleach",
+                "xMin": 257,
+                "yMin": 268,
+                "xMax": 291.5,
+                "yMax": 329,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "30C",
+                "xMin": 221,
+                "yMin": 274,
+                "xMax": 259,
+                "yMax": 330.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_iron",
+                "xMin": 346,
+                "yMin": 333,
+                "xMax": 403,
+                "yMax": 402.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 287,
+                "yMin": 263,
+                "xMax": 321,
+                "yMax": 316.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 360,
+                "yMin": 254,
+                "xMax": 401,
+                "yMax": 305,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_iron",
+                "xMin": 313,
+                "yMin": 499,
+                "xMax": 356,
+                "yMax": 563.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/174_jpg.rf.9ea4e3f05c4a10575d1efa535c62e6c9.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "ER_2",
+                "xMin": 167,
+                "yMin": 217,
+                "xMax": 205.5,
+                "yMax": 244,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_18",
+                "xMin": 166,
+                "yMin": 259,
+                "xMax": 215.5,
+                "yMax": 291,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_40",
+                "xMin": 171,
+                "yMin": 309,
+                "xMax": 223,
+                "yMax": 340,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_52",
+                "xMin": 178,
+                "yMin": 359,
+                "xMax": 227,
+                "yMax": 390.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "ER_27",
+                "xMin": 185,
+                "yMin": 410,
+                "xMax": 230,
+                "yMax": 440,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img84_jpg.rf.c3798912354a161d4b3c772aa847baa3.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "iron_low",
+                "xMin": 211,
+                "yMin": 364,
+                "xMax": 261.625,
+                "yMax": 429.255,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 245,
+                "yMin": 386,
+                "xMax": 294.136,
+                "yMax": 466.946,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 153,
+                "yMin": 283,
+                "xMax": 214.048,
+                "yMax": 357.724,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_flat",
+                "xMin": 197,
+                "yMin": 329,
+                "xMax": 228.5,
+                "yMax": 375.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "hand_wash",
+                "xMin": 284,
+                "yMin": 447,
+                "xMax": 320,
+                "yMax": 487,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/109_jpg.rf.9d51e62e4bd5f662b500a76609472389.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img12_jpg.rf.b4ecf53dd9c46d23c647629747874003.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_bleach",
+                "xMin": 256,
+                "yMin": 163,
+                "xMax": 301,
+                "yMax": 217.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 403,
+                "yMin": 169,
+                "xMax": 464,
+                "yMax": 220.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 72,
+                "yMin": 537,
+                "xMax": 108.5,
+                "yMax": 577.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_high",
+                "xMin": 117,
+                "yMin": 540,
+                "xMax": 157,
+                "yMax": 579,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron",
+                "xMin": 15,
+                "yMin": 539,
+                "xMax": 55.5,
+                "yMax": 582.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 329,
+                "yMin": 166,
+                "xMax": 379,
+                "yMax": 217.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_iron",
+                "xMin": 173,
+                "yMin": 544,
+                "xMax": 208.5,
+                "yMax": 577,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "steam",
+                "xMin": 223,
+                "yMin": 544,
+                "xMax": 257,
+                "yMax": 587.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "machine_wash_normal",
+                "xMin": 274,
+                "yMin": 542,
+                "xMax": 309.5,
+                "yMax": 573.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_wash",
+                "xMin": 428,
+                "yMin": 544,
+                "xMax": 465,
+                "yMax": 575.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "hand_wash",
+                "xMin": 482,
+                "yMin": 540,
+                "xMax": 516,
+                "yMax": 573,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "60C",
+                "xMin": 68,
+                "yMin": 591,
+                "xMax": 105,
+                "yMax": 622.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_clean_any_solvent_except_trichloroethylene",
+                "xMin": 169,
+                "yMin": 588,
+                "xMax": 211.5,
+                "yMax": 627.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_clean_any_solvent",
+                "xMin": 227,
+                "yMin": 591,
+                "xMax": 257,
+                "yMax": 624.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_clean_petrol_only",
+                "xMin": 274,
+                "yMin": 589,
+                "xMax": 309.5,
+                "yMax": 626,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "wet_clean",
+                "xMin": 323,
+                "yMin": 588,
+                "xMax": 358.5,
+                "yMax": 624,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_normal",
+                "xMin": 427,
+                "yMin": 588,
+                "xMax": 463.5,
+                "yMax": 625.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_medium",
+                "xMin": 482,
+                "yMin": 588,
+                "xMax": 519,
+                "yMax": 625.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 536,
+                "yMin": 586,
+                "xMax": 574,
+                "yMax": 628.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "bleach",
+                "xMin": 589,
+                "yMin": 590,
+                "xMax": 619.5,
+                "yMax": 624.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/101_jpg.rf.ae2ca26016d6384d03f28cbe20739a8e.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/PXL_20221022_040528592_jpg.rf.c70ba3b2330ee91aa384966795c6e6cf.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/19_jpg.rf.cdfa6eb68b215ac78baf38374189b735.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/AFC-tag-photo-1-5-12-16_jpg.rf.d34b1eedbbfd2388644d1029187b15c5.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img32_jpg.rf.c2801f23e6e3989b29be77763817fb4a.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 544,
+                "yMin": 385,
+                "xMax": 590.5,
+                "yMax": 440.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 507,
+                "yMin": 391,
+                "xMax": 545.5,
+                "yMax": 434.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 440,
+                "yMin": 395,
+                "xMax": 476,
+                "yMax": 437.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "30C",
+                "xMin": 398,
+                "yMin": 396,
+                "xMax": 439.5,
+                "yMax": 438.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 470,
+                "yMin": 392,
+                "xMax": 508,
+                "yMax": 431,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 224,
+                "yMin": 524,
+                "xMax": 267,
+                "yMax": 575.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 185,
+                "yMin": 532,
+                "xMax": 224,
+                "yMax": 577,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 142,
+                "yMin": 538,
+                "xMax": 179.5,
+                "yMax": 584.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 103,
+                "yMin": 538,
+                "xMax": 140.5,
+                "yMax": 588,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/77_jpg.rf.d18afefb0fc2a225ef0c43550e5fd940.jpg",
+        "boundingBoxAnnotations": [],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img23_jpg.rf.d35b2da7e543033f422067df4dd609ce.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "iron_medium",
+                "xMin": 353,
+                "yMin": 52,
+                "xMax": 418.5,
+                "yMax": 101,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 293,
+                "yMin": 55,
+                "xMax": 353.5,
+                "yMax": 108,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 208,
+                "yMin": 61,
+                "xMax": 292.5,
+                "yMax": 109.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_clean_any_solvent_except_trichloroethylene",
+                "xMin": 426,
+                "yMin": 47,
+                "xMax": 470,
+                "yMax": 92.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_normal",
+                "xMin": 471,
+                "yMin": 51,
+                "xMax": 532.5,
+                "yMax": 91,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img3_jpg.rf.b9cb33b20733e49449cb6ffe844eb3a9.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "40C",
+                "xMin": 205,
+                "yMin": 153,
+                "xMax": 236.5,
+                "yMax": 204,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 245,
+                "yMin": 175,
+                "xMax": 282.5,
+                "yMax": 220.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 329,
+                "yMin": 218,
+                "xMax": 373,
+                "yMax": 262.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 376,
+                "yMin": 231,
+                "xMax": 421.5,
+                "yMax": 280,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 289,
+                "yMin": 199,
+                "xMax": 317.5,
+                "yMax": 241.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img28_jpg.rf.ab346b7c4224585f7e8252982dc2d184.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "iron_medium",
+                "xMin": 357,
+                "yMin": 234,
+                "xMax": 436,
+                "yMax": 352,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 217,
+                "yMin": 241,
+                "xMax": 277.5,
+                "yMax": 354.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 129,
+                "yMin": 251,
+                "xMax": 214,
+                "yMax": 360,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 281,
+                "yMin": 242,
+                "xMax": 351.5,
+                "yMax": 347.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_clean_any_solvent_except_trichloroethylene",
+                "xMin": 432,
+                "yMin": 242,
+                "xMax": 499,
+                "yMax": 343,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img25_jpg.rf.f9e050abc27ab8babeeb40cdcb67efb8.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "40C",
+                "xMin": 113,
+                "yMin": 342,
+                "xMax": 161.5,
+                "yMax": 386,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 164,
+                "yMin": 351,
+                "xMax": 203.5,
+                "yMax": 396.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 248,
+                "yMin": 391,
+                "xMax": 299.5,
+                "yMax": 421.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 299,
+                "yMin": 394,
+                "xMax": 356.5,
+                "yMax": 436.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 210,
+                "yMin": 372,
+                "xMax": 252,
+                "yMax": 406.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img6_jpg.rf.da5bd905070fc1cf8055967c0c196292.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "iron_medium",
+                "xMin": 373,
+                "yMin": 185,
+                "xMax": 411.022,
+                "yMax": 246.446,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "non_chlorine_bleach",
+                "xMin": 338,
+                "yMin": 254,
+                "xMax": 369.818,
+                "yMax": 303.337,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "hand_wash",
+                "xMin": 301,
+                "yMin": 263,
+                "xMax": 351.452,
+                "yMax": 334.322,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "dry_flat",
+                "xMin": 352,
+                "yMin": 228,
+                "xMax": 380,
+                "yMax": 265.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img85_jpg.rf.d69c84c1bd43bc22d269673637f5762b.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "non_chlorine_bleach",
+                "xMin": 418,
+                "yMin": 235,
+                "xMax": 575.412,
+                "yMax": 384.572,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 61,
+                "yMin": 215,
+                "xMax": 256.03200000000004,
+                "yMax": 363.2,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_medium",
+                "xMin": 287,
+                "yMin": 223,
+                "xMax": 418,
+                "yMax": 362.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img2_jpg.rf.fba39f36aef5eea521220e0c1ee391df.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "DN_bleach",
+                "xMin": 254,
+                "yMin": 316,
+                "xMax": 299,
+                "yMax": 377,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 331,
+                "yMin": 316,
+                "xMax": 370,
+                "yMax": 377,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "40C",
+                "xMin": 214,
+                "yMin": 320,
+                "xMax": 256.5,
+                "yMax": 376,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 367,
+                "yMin": 318,
+                "xMax": 418.5,
+                "yMax": 379,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_tumble_dry",
+                "xMin": 298,
+                "yMin": 319,
+                "xMax": 328.5,
+                "yMax": 367,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "30C",
+                "xMin": 387,
+                "yMin": 282,
+                "xMax": 415,
+                "yMax": 314.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img93_jpg.rf.fc98a1382d1a05d169eebfe71f3f9eeb.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "30C",
+                "xMin": 122,
+                "yMin": 502,
+                "xMax": 234.481,
+                "yMax": 580.369,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 359,
+                "yMin": 498,
+                "xMax": 425.335,
+                "yMax": 586.832,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_low",
+                "xMin": 293,
+                "yMin": 500,
+                "xMax": 363.18,
+                "yMax": 589.673,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_bleach",
+                "xMin": 211,
+                "yMin": 501,
+                "xMax": 293.678,
+                "yMax": 589.274,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 424,
+                "yMin": 510,
+                "xMax": 484,
+                "yMax": 580,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    },
+    {
+        "imageGcsUri": "gs://cloud-ai-platform-f7267e50-1966-407c-ba51-0080ca3d4e7f/img22_jpg.rf.dc6b225d2c11e4776c2bdc13d6a7a52e.jpg",
+        "boundingBoxAnnotations": [
+            {
+                "displayName": "40C",
+                "xMin": 63,
+                "yMin": 325,
+                "xMax": 164.5,
+                "yMax": 380,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "DN_dry_clean",
+                "xMin": 482,
+                "yMin": 328,
+                "xMax": 591,
+                "yMax": 381,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "iron_medium",
+                "xMin": 378,
+                "yMin": 330,
+                "xMax": 484,
+                "yMax": 382.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "non_chlorine_bleach",
+                "xMin": 187,
+                "yMin": 326,
+                "xMax": 268,
+                "yMax": 387.5,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            },
+            {
+                "displayName": "tumble_dry_low",
+                "xMin": 282,
+                "yMin": 329,
+                "xMax": 368.5,
+                "yMax": 374,
+                "annotationResourceLabels": {
+                    "aiplatform.googleapis.com/annotation_set_name": "my_annotation_set",
+                    "env": "prod"
+                }
+            }
+        ],
+        "dataItemResourceLabels": {
+            "aiplatform.googleapis.com/ml_use": "test"
+        }
+    }
+]
