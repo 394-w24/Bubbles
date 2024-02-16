@@ -18,45 +18,27 @@ const DummyInstructions = () => {
         </li>
         <li>
           <b>Detergent:</b> Add the correct amount of a high-efficiency laundry
-          detergent that's suitable for colored fabrics into the detergent
-          drawer or directly into the drum, depending on your machine's design.
+          detergent that's suitable into the detergent drawer or directly into
+          the drum, depending on your machine's design.
         </li>
         <li>
-          <b>Temperature Control:</b> Set the temperature dial to 'Warm'. This
-          will help remove any residue from manufacturing and will be gentle
-          enough to prevent significant dye bleeding.
+          <b>Temperature Control:</b> The "Delicates" setting is likely to use
+          colder water, which would generally be safe for garments that require
+          washing below 30 degrees Celsius. Always consult the machine's user
+          manual for specific instructions, as it will provide the most accurate
+          guidance for the settings on your particular model. If you no longer
+          have the manual, manufacturers often have digital copies available on
+          their websites.
         </li>
         <li>
-          <b>Cycle Type:</b> Choose the 'Normal' cycle for cotton fabrics. This
-          cycle will have a combination of washing and spinning phases suitable
-          for the fabric's durability.
-        </li>
-        <li>
-          <b>Soil Level:</b> Select 'Medium' soil level. As it's the first wash,
-          there's likely only manufacturing residues rather than actual dirt.
-        </li>
-        <li>
-          <b>Extra Options:</b>
-          <ul>
-            <li>
-              <b>Deep Fill:</b> You may opt not to use this feature since you're
-              washing the item alone, and it doesn't need extra water.
-            </li>
-            <li>
-              <b>Extra Rinse:</b> This could be a good option to ensure all
-              detergent and loose dye are thoroughly rinsed from the garment.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <b>Start the Machine:</b> Close the lid or door and press the start
-          button to begin the wash cycle.
-        </li>
-        <li>
-          <b>Drying:</b> Once the wash is complete, remove the garment. If the
-          abstract machine has a dryer, set it to a low or medium heat setting
-          and start the drying cycle. Otherwise, hang the garment out to air
-          dry.
+          <b>Start the Machine:</b> Press and hold the "Start" button until the
+          machine begins the cycle. The "Start" button is on the far right of
+          the control panel, indicated by a play symbol (a right-pointing
+          triangle) or simply says "Start". You may need to hold it for a few
+          seconds. If the machine does not start, make sure the door is closed
+          properly, and that the machine is plugged in and functional. If
+          problems persist, refer to the user manual for troubleshooting or
+          contact the manufacturer's customer service for assistance.
         </li>
       </ol>
     </div>
