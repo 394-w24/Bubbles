@@ -6,13 +6,15 @@ const DummyInstructions = () => {
       <h4>Instructions</h4>
       <ol>
         <li>
-          <b>Power:</b> Ensure the washing machine is plugged in, and turn the
-          power on
+          <b>Power:</b> Press the button with the power symbol on it. This is
+          the button on the far left in the row of options under "Regular." It's
+          indicated by a small circle with a line at the top, which is the
+          universal symbol for power. Press this button once to turn on the
+          machine
         </li>
         <li>
           <b>Load the Washing Machine:</b> Open the washing machine lid or door
-          and place your cotton garment inside. Since it's the first wash and
-          the color is deep, make sure to wash it alone.
+          and place your cotton garment inside.
         </li>
         <li>
           <b>Detergent:</b> Add the correct amount of a high-efficiency laundry
