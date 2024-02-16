@@ -142,6 +142,9 @@ const Scanner = ({ user }) => {
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
+            videoConstraints={{
+              facingMode: "environment" // This tells the browser to use the rear camera by default
+            }}
           />
           <div className="scanner-webcam-controls">
             <button onClick={dummyProcessImage}>Capture Photo</button>
