@@ -12,6 +12,8 @@ import "./Scanner.css";
 import DummyTranslations from "./DummyTranslation";
 import DummyInstructions from "./DummyInstructions";
 import Loading from "./Loading";
+import WashInstructions from "./WashInstructions";
+import DryInstructions from "./DryInstructions";
 
 const Scanner = ({ user }) => {
   const [image, setImage] = useState("");
@@ -131,7 +133,8 @@ const Scanner = ({ user }) => {
           ) : (
             <>
               <DummyTranslations />
-              <DummyInstructions />
+              <WashInstructions />
+              <DryInstructions />
             </>
           )}
         </div>
@@ -143,7 +146,7 @@ const Scanner = ({ user }) => {
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
             videoConstraints={{
-              facingMode: "environment" // This tells the browser to use the rear camera by default
+              facingMode: "environment", // This tells the browser to use the rear camera by default
             }}
           />
           <div className="scanner-webcam-controls">

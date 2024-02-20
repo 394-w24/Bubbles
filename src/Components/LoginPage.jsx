@@ -25,6 +25,10 @@ const signIn = () => {
     });
 };
 
+// const signIn = async () => {
+//   await signInWithPopup(auth, new GoogleAuthProvider()).catch((e) => alert(e));
+// };
+
 const LoginPage = () => {
   return (
     <div className="login-page">
