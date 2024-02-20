@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 
 # Make sure to set the environment variable OPENAI_API_KEY with your actual API key beforehand
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 # api_key = os.environ.get("OPENAI_API_KEY")
 # if not api_key:
 #     raise ValueError("The OPENAI_API_KEY environment variable is not set.")
