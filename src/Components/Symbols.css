@@ -6,3 +6,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.symbols-cards {
+  width: 100%;
+}

@@ -3,7 +3,7 @@ import "./Instructions.css";
 const WashInstructions = () => {
   return (
     <div className="instructions">
-      <h4>Wash Instuctions:</h4>
+      <h4>Wash Instructions:</h4>
       <ol>
         <li>Set your washer to “cotton” </li>
         <li>Keep spin at default</li>

@@ -111,3 +111,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/react,firebase,visualstudiocode,macos,windows
+
+
+# MATERIAL ABOVE IS CREATED AS A PART OF INITIALIZATION
+
+functions/venv
+functions/__pycache__
+
