@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import SymbolList from "./SymbolList";
@@ -17,15 +18,21 @@ const Symbols = ({ user }) => {
       { url: "/bleach_all_allow.png", id: 1, alt: "A dryer symbol" },
     ],
   };
+  const [selections, setSelections] = useState({ washing: null, drying: null });
 
   return (
     <div className="symbols">
       <Header user={user} />
       <div className="symbols-cards">
         {Object.entries(sections).map(([header, symbols]) => (
-          <div className="symbols-section">
+          <div className="symbols-section" key={header}>
             <h4>{capitalizeFirstLetter(header)}</h4>
-            <SymbolList symbols={symbols} />
+            <SymbolList
+              symbols={symbols}
+              header={header}
+              selectedSymbolId={selections[header]}
+              setSelectedSymbols={setSelections}
+            />
           </div>
         ))}
       </div>
