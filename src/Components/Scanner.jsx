@@ -14,6 +14,7 @@ import DummyInstructions from "./DummyInstructions";
 import Loading from "./Loading";
 import WashInstructions from "./WashInstructions";
 import DryInstructions from "./DryInstructions";
+import { FunctionCallTester, callFirebaseFunction } from "./FunctionCallTest";
 
 const Scanner = ({ user }) => {
   const [image, setImage] = useState("");
@@ -98,6 +99,11 @@ const Scanner = ({ user }) => {
       console.error("Upload failed", error);
     }
   };
+
+
+
+
+
 
   return (
     <div className="scanner">
