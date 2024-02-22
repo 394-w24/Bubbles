@@ -1,0 +1,17 @@
+{
+    "washing":[
+        { "url": "/images/symbols/0.svg", "id": 0, "alt": "A washing symbol", "translation": "Machine Wash at or below 95°C/203°F!" },
+        { "url": "/images/symbols/1.svg", "id": 1, "alt": "A washing symbol", "translation": "Machine Wash at or below 70°C/160°F!" }   
+    ],
+    "bleaching":[
+        { "url": "/images/symbols/12.svg", "id": 12, "alt": "A bleaching symbol", "translation": "Allowed for both chlorine and oxygen bleach" },
+        { "url": "/images/symbols/13.svg", "id": 13, "alt": "A bleaching symbol", "translation": "Allowed for non chlorine bleach" }
+    ],
+    "drying":[],
+    "ironing":[],
+    "professionalCleaning":[
+        
+    ]
+    
+
+}

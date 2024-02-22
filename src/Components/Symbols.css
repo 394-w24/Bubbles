@@ -10,3 +10,12 @@
 .symbols-cards {
   width: 100%;
 }
+
+
+.symbol-item {
+  /* Styles for your symbol items */
+}
+
+.symbol-item.active {
+  border: 2px solid blue; /* Example style for active state */
+}
