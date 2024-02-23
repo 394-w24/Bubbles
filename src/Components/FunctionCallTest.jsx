@@ -11,7 +11,6 @@ const getInstructions = async (url) => {
 
         var key = result.data["res"]
         // console.log(key);
-        // console.log("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");
         getGPT(key, url).then((res) => {
             // Perform the API call
             console.log(res)
