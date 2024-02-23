@@ -7,15 +7,12 @@
   flex-direction: column;
 }
 
+.symbols-content {
+  width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
 .symbols-cards {
   width: 100%;
-}
-
-
-.symbol-item {
-  /* Styles for your symbol items */
-}
-
-.symbol-item.active {
-  border: 2px solid blue; /* Example style for active state */
 }

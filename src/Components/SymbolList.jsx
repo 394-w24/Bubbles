@@ -17,7 +17,8 @@ const SymbolList = ({
           onClick={() => {
             setSelectedSymbols((selectedSymbols) => ({
               ...selectedSymbols,
-              [header]: symbol.id,
+              [header]:
+                selectedSymbols[header] === symbol.id ? null : symbol.id,
             }));
           }}
           sx={{
@@ -43,11 +44,3 @@ const SymbolList = ({
 };
 
 export default SymbolList;
-
-
-
-
-
-
-
-
