@@ -9,9 +9,8 @@ import data from "../../data/symbol.json";
 const capitalizeFirstLetter = (string) =>
   string.charAt(0).toUpperCase() + string.slice(1);
 
-const thereExistsSelection = (selections) => {
-  return Object.entries(selections).some(([, symbolId]) => symbolId !== null);
-};
+const thereExistsSelection = (selections) =>
+  Object.entries(selections).some(([, symbolId]) => symbolId !== null);
 
 const Translations = ({ selections, data }) => {
   const selectedSymbols = Object.entries(selections)
@@ -33,12 +32,18 @@ const Translations = ({ selections, data }) => {
 };
 
 const Symbols = ({ user }) => {
-  const [selections, setSelections] = useState({ washing: null, drying: null });
+  const [selections, setSelections] = useState({});
 
   return (
     <div className="symbols">
       <Header user={user} />
       <div className="symbols-content">
+        <div className="translations">
+          <h3>Translations</h3>
+          {thereExistsSelection(selections) && (
+            <Translations data={data} selections={selections} />
+          )}
+        </div>
         <div className="symbols-cards">
           {Object.entries(data).map(([header, symbols]) => (
             <div className="symbols-section" key={header}>
@@ -55,14 +60,6 @@ const Symbols = ({ user }) => {
               />
             </div>
           ))}
-        </div>
-        <div className="translations">
-          {thereExistsSelection(selections) && (
-            <>
-              <h3>Translations</h3>
-              <Translations data={data} selections={selections} />
-            </>
-          )}
         </div>
       </div>
       <NavBar />

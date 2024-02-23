@@ -1,6 +1,10 @@
 .translations {
   overflow-y: auto;
-  margin-top: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  width: 100%;
 }
 
 .translations li {
