@@ -16,18 +16,17 @@ const logger = require("firebase-functions/logger");
 // Import required modules
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
-const { Configuration, OpenAIApi } = require("openai");
+const { Configuration, OpenAI } = require("openai");
+
 
 // Initialize Firebase app
 admin.initializeApp();
 
 exports.getAPIkey = onCall(
   { cors: true },
-  (req) => {
-    // if (!OPENAI_API_KEY) {
-    //   throw new Error("The OPENAI_API_KEY environment variable is not set.");
-    // }
-    return { key: "INSERT KEY HERE OR OTHERWISE FIND WAY TO GET KEY" }
+  (request) => {
+    key = process.env.OPENAI_API_KEY
+    return { res: key }
   });
 
 

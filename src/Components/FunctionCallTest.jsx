@@ -1,20 +1,26 @@
 import { getFunctions, httpsCallable } from "firebase/functions";
 import { firebase } from "../Utilities/firebase";
 import OpenAI from "openai";
-const callFirebaseFunction = async (url) => {
+const getInstructions = async (url) => {
 
     const functions = getFunctions(firebase);
     const onRequestExample2 = httpsCallable(functions, 'getAPIkey');
-
-    const OPENAI_API_KEY = "a"
+    console.log(1)
 
     onRequestExample2().then((result) => {
 
-        getGPT(result.data.key, url)
-        // Perform the API call
+        var key = result.data["res"]
+        // console.log(key);
+        // console.log("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");
+        getGPT(key, url).then((res) => {
+            // Perform the API call
+            console.log(res)
+            console.log(1)
+            return res.split("\n")
+        })
 
     }).catch((error) => {
-        console.error(`error: please input api key, currently removed for security reasons and to prevent excessive use of tokens`);
+        console.error(`error: ${error}`);
     });
 
     console.log(1)
@@ -49,42 +55,8 @@ const getGPT = async (OPENAI_API_KEY, imageUrl) => {
         ],
         max_tokens: 300,
     });
-    const symbols = chatCompletion.choices[0].message;
+    const symbols = chatCompletion.choices[0].message.content;
+    return symbols;
 }
 
-
-function FunctionCallTester(url) {
-    const imageUrl = url; // Example image URL
-    fetch('https://onrequestexample2-zbtki6uvnq-uc.a.run.app', {
-        mode: 'cors',
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ imageUrl: imageUrl }),
-    })
-        .then(response => response.json())
-        .then(data => {
-            // Handle the response data from the Cloud Function
-            console.log(data);
-        })
-        .catch(error => {
-            // Handle errors
-            console.log(error)
-            console.error('Error likely due to cors:', error);
-        });
-
-
-    // axios.get(`https://cors-anywhere.herokuapp.com/https://us-central1-bubbles-7ba5c.cloudfunctions.net/onRequestExample`, {
-    //     headers: {
-    //     }
-    // })
-    //     .then(response => {
-    //         const $ = cheerio.load(response.data);
-    //     });
-
-
-};
-
-
-export { FunctionCallTester, callFirebaseFunction };
+export { getInstructions };

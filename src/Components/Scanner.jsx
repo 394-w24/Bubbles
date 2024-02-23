@@ -14,7 +14,7 @@ import DummyInstructions from "./DummyInstructions";
 import Loading from "./Loading";
 import WashInstructions from "./WashInstructions";
 import DryInstructions from "./DryInstructions";
-import { FunctionCallTester, callFirebaseFunction } from "./FunctionCallTest";
+import { getInstructions } from "./FunctionCallTest";
 
 const Scanner = ({ user }) => {
   const [image, setImage] = useState("");
@@ -22,7 +22,8 @@ const Scanner = ({ user }) => {
   const [imageUploaded, setImageUploaded] = useState(false);
   const [imageLoading, setImageLoading] = useState(true);
 
-  // callFirebaseFunction("https://t3.ftcdn.net/jpg/00/95/78/00/240_F_95780051_BQyIHBd1VfdpBeN9YSGMcWFuNC8DZ5Cb.jpg");
+  // example usage: 
+  // getInstructions("https://t3.ftcdn.net/jpg/00/95/78/00/240_F_95780051_BQyIHBd1VfdpBeN9YSGMcWFuNC8DZ5Cb.jpg");
 
   const dummyProcessImage = () => {
     setImageUploaded(true);
