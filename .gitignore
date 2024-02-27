@@ -118,3 +118,4 @@ $RECYCLE.BIN/
 functions/venv
 functions/__pycache__
 
+functions/.env
