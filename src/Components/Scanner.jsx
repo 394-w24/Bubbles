@@ -23,7 +23,7 @@ const Scanner = ({ user }) => {
   const [imageLoading, setImageLoading] = useState(true);
 
   // example usage: 
-  // getInstructions("https://t3.ftcdn.net/jpg/00/95/78/00/240_F_95780051_BQyIHBd1VfdpBeN9YSGMcWFuNC8DZ5Cb.jpg");
+  getInstructions("https://t3.ftcdn.net/jpg/00/95/78/00/240_F_95780051_BQyIHBd1VfdpBeN9YSGMcWFuNC8DZ5Cb.jpg");
 
   const dummyProcessImage = () => {
     setImageUploaded(true);
