@@ -7,6 +7,8 @@ import { useState, useEffect, useCallback } from "react";
 
 import { getStorage } from "firebase/storage";
 
+import * as cors from "cors";
+
 import {
   getAuth,
   GoogleAuthProvider,
@@ -25,9 +27,11 @@ const firebaseConfig = {
   appId: "1:560959266079:web:a9a0ea5c132c565246a42a",
   measurementId: "G-G9MM5BMB2W",
 };
-
 // Initialize Firebase
-const firebase = initializeApp(firebaseConfig);
+export const firebase = initializeApp(firebaseConfig);
+
+// firebase.use(cors);
+
 
 export const auth = getAuth(firebase);
 
