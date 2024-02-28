@@ -1,0 +1,246 @@
+{
+  "washing": [
+    {
+      "url": "/images/symbols/0.svg",
+      "id": 0,
+      "alt": "A washing symbol",
+      "translation": "Machine Wash at or below 95°C/203°F!"
+    },
+    {
+      "url": "/images/symbols/1.svg",
+      "id": 1,
+      "alt": "A washing symbol",
+      "translation": "Machine Wash at or below 70°C/160°F!"
+    },
+    {
+      "url": "/images/symbols/2.svg",
+      "id": 2,
+      "alt": "A washing symbol",
+      "translation": "Machine Wash at or below 60°C/140°F!"
+    },
+    {
+      "url": "/images/symbols/3.svg",
+      "id": 3,
+      "alt": "A washing symbol",
+      "translation": "Permanent Press Machine Wash at or below 60°C/140°F!"
+    },
+    {
+      "url": "/images/symbols/4.svg",
+      "id": 4,
+      "alt": "A washing symbol",
+      "translation": "Machine Wash at or below 40°C/105°F!"
+    },
+    {
+      "url": "/images/symbols/5.svg",
+      "id": 5,
+      "alt": "A washing symbol",
+      "translation": "Permanent Press Machine Wash at or below 40°C/105°F!"
+    },
+    {
+      "url": "/images/symbols/6.svg",
+      "id": 6,
+      "alt": "A washing symbol",
+      "translation": "Delicate Machine Wash at or below 40°C/105°F!"
+    },
+    {
+      "url": "/images/symbols/7.svg",
+      "id": 7,
+      "alt": "A washing symbol",
+      "translation": "Machine Wash at or below 30°C/85°F!"
+    },
+    {
+      "url": "/images/symbols/8.svg",
+      "id": 8,
+      "alt": "A washing symbol",
+      "translation": "Permanent Press Machine Wash at or below 30°C/85°F!"
+    },
+    {
+      "url": "/images/symbols/9.svg",
+      "id": 9,
+      "alt": "A washing symbol",
+      "translation": "Delicate Machine Wash at or below 30°C/85°F!"
+    },
+    {
+      "url": "/images/symbols/10.svg",
+      "id": 10,
+      "alt": "A washing symbol",
+      "translation": "Hand Wash Only!"
+    },
+    {
+      "url": "/images/symbols/11.svg",
+      "id": 11,
+      "alt": "A washing symbol",
+      "translation": "Do not Wash!"
+    }
+  ],
+  "bleaching": [
+    {
+      "url": "/images/symbols/12.svg",
+      "id": 12,
+      "alt": "A bleaching symbol",
+      "translation": "Allowed for both chlorine and oxygen bleach"
+    },
+    {
+      "url": "/images/symbols/13.svg",
+      "id": 13,
+      "alt": "A bleaching symbol",
+      "translation": "Allowed for non chlorine bleach"
+    },
+    {
+      "url": "/images/symbols/14.svg",
+      "id": 14,
+      "alt": "A bleaching symbol",
+      "translation": "Allowed for non chlorine bleach"
+    }
+  ],
+  "drying": [
+    {
+      "url": "/images/symbols/15.jpg",
+      "id": 15,
+      "alt": "A drying symbol",
+      "translation": "Tumble dry at medium heat (not exceeding 60°C/140°F!)"
+    },
+    {
+      "url": "/images/symbols/16.svg",
+      "id": 16,
+      "alt": "A drying symbol",
+      "translation": "Tumble dry at low heat (not exceeding 40°C/104°F!)"
+    },
+    {
+      "url": "/images/symbols/17.svg",
+      "id": 17,
+      "alt": "A drying symbol",
+      "translation": "Do not tumble dry. Air dry only"
+    },
+    {
+      "url": "/images/symbols/18.svg",
+      "id": 18,
+      "alt": "A drying symbol",
+      "translation": "Drip Dry"
+    },
+    {
+      "url": "/images/symbols/19.svg",
+      "id": 19,
+      "alt": "A drying symbol",
+      "translation": "Do not wring. Drip Dry"
+    },
+    {
+      "url": "/images/symbols/20.svg",
+      "id": 20,
+      "alt": "A drying symbol",
+      "translation": "Dry Flat"
+    },
+    {
+      "url": "/images/symbols/21.svg",
+      "id": 21,
+      "alt": "A drying symbol",
+      "translation": "Do not wring. Dry Flat"
+    },
+    {
+      "url": "/images/symbols/22.svg",
+      "id": 22,
+      "alt": "A drying symbol",
+      "translation": "Drip dry in shade"
+    },
+    {
+      "url": "/images/symbols/23.svg",
+      "id": 23,
+      "alt": "A drying symbol",
+      "translation": "Do not wring. Drip dry in shade"
+    },
+    {
+      "url": "/images/symbols/24.svg",
+      "id": 24,
+      "alt": "A drying symbol",
+      "translation": "Dry Flat. Dry in shade"
+    },
+    {
+      "url": "/images/symbols/25.svg",
+      "id": 25,
+      "alt": "A drying symbol",
+      "translation": "Do not wring. Dry Flat. Dry in shade"
+    }
+  ],
+  "ironing": [
+    {
+      "url": "/images/symbols/26.svg",
+      "id": 26,
+      "alt": "A ironing symbol",
+      "translation": "Hot Iron. Max Temp. 200°C/390°F"
+    },
+    {
+      "url": "/images/symbols/27.svg",
+      "id": 27,
+      "alt": "A ironing symbol",
+      "translation": "Warm Iron. Max Temp. 150°C/300°F"
+    },
+    {
+      "url": "/images/symbols/28.svg",
+      "id": 28,
+      "alt": "A ironing symbol",
+      "translation": "Cool Iron. Max Temp. 110°C/230°F"
+    },
+    {
+      "url": "/images/symbols/29.svg",
+      "id": 29,
+      "alt": "A ironing symbol",
+      "translation": "Do not Iron"
+    }
+  ],
+  "professionalCleaning": [
+    {
+      "url": "/images/symbols/30.svg",
+      "id": 30,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Dry clean, tetrachloroethylene(PCE) only"
+    },
+    {
+      "url": "/images/symbols/31.svg",
+      "id": 31,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Gentle cleaning with PCE"
+    },
+    {
+      "url": "/images/symbols/32.jpg",
+      "id": 32,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Dry clean, hydrocarbon solvents(HCS) only"
+    },
+    {
+      "url": "/images/symbols/33.svg",
+      "id": 33,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Gentle cleaning with HCS"
+    },
+    {
+      "url": "/images/symbols/34.svg",
+      "id": 34,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Do not dry"
+    },
+    {
+      "url": "/images/symbols/35.svg",
+      "id": 35,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Professional wet cleaning"
+    },
+    {
+      "url": "/images/symbols/36.svg",
+      "id": 36,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Gentle wet cleaning"
+    },
+    {
+      "url": "/images/symbols/37.svg",
+      "id": 37,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Very gentle wet cleaning"
+    },
+    {
+      "url": "/images/symbols/38.svg",
+      "id": 38,
+      "alt": "A professionalCleaning symbol",
+      "translation": "Do not wet clean"
+    }
+  ]
+}

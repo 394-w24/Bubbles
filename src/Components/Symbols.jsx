@@ -1,40 +1,66 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import "./Symbols.css";
+import "./Translations.css";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import SymbolList from "./SymbolList";
-import "./Symbols.css";
+import data from "../../data/symbol.json";
 
 const capitalizeFirstLetter = (string) =>
   string.charAt(0).toUpperCase() + string.slice(1);
 
+const thereExistsSelection = (selections) =>
+  Object.entries(selections).some(([, symbolId]) => symbolId !== null);
+
+const Translations = ({ selections, data }) => {
+  const selectedSymbols = Object.entries(selections)
+    .filter(([, symbolId]) => symbolId !== null)
+    .map(([header, symbolId]) =>
+      data[header].find((symbol) => symbol.id === symbolId)
+    );
+
+  return (
+    <ul>
+      {selectedSymbols.map((symbol) => (
+        <li key={symbol.id}>
+          <img src={symbol.url} alt={symbol.alt} />
+          {symbol.translation}
+        </li>
+      ))}
+    </ul>
+  );
+};
+
 const Symbols = ({ user }) => {
-  const sections = {
-    washing: [
-      { url: "/wash_at_or_below_40.png", id: 0, alt: "A washer symbol" },
-      { url: "/wash_below_30.jpeg", id: 1, alt: "A washer Symbol" },
-    ],
-    drying: [
-      { url: "/tumble_dry.png", id: 0, alt: "A dryer symbol" },
-      { url: "/bleach_all_allow.png", id: 1, alt: "A dryer symbol" },
-    ],
-  };
-  const [selections, setSelections] = useState({ washing: null, drying: null });
+  const [selections, setSelections] = useState({});
 
   return (
     <div className="symbols">
       <Header user={user} />
-      <div className="symbols-cards">
-        {Object.entries(sections).map(([header, symbols]) => (
-          <div className="symbols-section" key={header}>
-            <h4>{capitalizeFirstLetter(header)}</h4>
-            <SymbolList
-              symbols={symbols}
-              header={header}
-              selectedSymbolId={selections[header]}
-              setSelectedSymbols={setSelections}
-            />
-          </div>
-        ))}
+      <div className="symbols-content">
+        <div className="translations">
+          <h3>Translations</h3>
+          {thereExistsSelection(selections) && (
+            <Translations data={data} selections={selections} />
+          )}
+        </div>
+        <div className="symbols-cards">
+          {Object.entries(data).map(([header, symbols]) => (
+            <div className="symbols-section" key={header}>
+              <h4>
+                {header === "professionalCleaning"
+                  ? "Professional Cleaning"
+                  : capitalizeFirstLetter(header)}
+              </h4>
+              <SymbolList
+                symbols={symbols}
+                header={header}
+                selectedSymbolId={selections[header]}
+                setSelectedSymbols={setSelections}
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <NavBar />
     </div>
