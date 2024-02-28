@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "bubbles-7ba5c"
-  }
+  },
+  "targets": {
+    "bubbles-7ba5c": {
+      "hosting": {
+        "dev": [
+          "bubbles-dev"
+        ],
+        "prod": [
+          "bubbles-7ba5c"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

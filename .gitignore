@@ -117,5 +117,5 @@ $RECYCLE.BIN/
 
 functions/venv
 functions/__pycache__
-firebase.json
 coverage/
+.vscode/
