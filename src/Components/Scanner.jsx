@@ -175,7 +175,12 @@ const Scanner = ({ user }) => {
       <Header user={user} />
 
       {translations.length > 0 ?
-      <Translations translations={translations} />
+      <>
+      <div className="scanner-translations-container">
+        <Translations translations={translations} />
+      </div>
+      <button onClick={() => {setImage(""); setTranslations([]);}}>Retake Image</button>
+      </>
       : (processingImage ? <Loading /> : (image ? (
         <div>
           <img src={image} alt="Captured" />

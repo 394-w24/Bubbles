@@ -48,7 +48,7 @@ const getInstructions = async (url) => {
         console.log(1);
 
         // This return value will be wrapped in a Promise because the function is async
-        return res.split(", ");
+        return res.split(",");
     } catch (error) {
         console.error(`error: ${error}`);
         // It's usually a good idea to rethrow the error or handle it accordingly
