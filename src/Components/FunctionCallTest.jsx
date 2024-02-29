@@ -1,35 +1,61 @@
 import { getFunctions, httpsCallable } from "firebase/functions";
 import { firebase } from "../Utilities/firebase";
 import OpenAI from "openai";
+
+// const getInstructions = async (url) => {
+
+//     const functions = getFunctions(firebase);
+//     const onRequestExample2 = httpsCallable(functions, 'getAPIkey');
+//     console.log(1)
+
+//     onRequestExample2().then((result) => {
+
+//         var key = result.data["res"]
+
+//         // console.log(key)
+
+//         // var res = "7, 14, 17, 29, 34"
+//         // console.log(res.split(", "))
+
+//         getGPT(key, url).then((res) => {
+//             // Perform the API call
+//             console.log(res)
+//             console.log(1)
+//             return res.split(", ")
+//         })
+
+//     }).catch((error) => {
+//         console.error(`error: ${error}`);
+//     });
+
+//     console.log(1)
+//     // // console.log(symbols)
+// }
+
 const getInstructions = async (url) => {
+    try {
+        const functions = getFunctions(firebase);
+        const onRequestExample2 = httpsCallable(functions, 'getAPIkey');
+        console.log(1);
 
-    const functions = getFunctions(firebase);
-    const onRequestExample2 = httpsCallable(functions, 'getAPIkey');
-    console.log(1)
+        // Await the call to onRequestExample2
+        const result = await onRequestExample2();
+        var key = result.data["res"];
 
-    onRequestExample2().then((result) => {
+        // Now await the result of getGPT
+        const res = await getGPT(key, url);
+        console.log(res);
+        console.log(1);
 
-        var key = result.data["res"]
-
-        // console.log(key)
-
-        // var res = "7, 14, 17, 29, 34"
-        // console.log(res.split(", "))
-
-        getGPT(key, url).then((res) => {
-            // Perform the API call
-            console.log(res)
-            console.log(1)
-            return res.split(", ")
-        })
-
-    }).catch((error) => {
+        // This return value will be wrapped in a Promise because the function is async
+        return res.split(", ");
+    } catch (error) {
         console.error(`error: ${error}`);
-    });
+        // It's usually a good idea to rethrow the error or handle it accordingly
+        throw error; // Rethrow or return an alternative value
+    }
+};
 
-    console.log(1)
-    // // console.log(symbols)
-}
 
 const getGPT = async (OPENAI_API_KEY, imageUrl) => {
 

@@ -120,5 +120,3 @@ functions/__pycache__
 functions/.env
 coverage/
 .vscode/
-
-.vscode/

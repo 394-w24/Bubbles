@@ -32,7 +32,6 @@ export const firebase = initializeApp(firebaseConfig);
 
 // firebase.use(cors);
 
-
 export const auth = getAuth(firebase);
 
 // Initialize Realtime Database and get a reference to the service
