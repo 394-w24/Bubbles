@@ -64,3 +64,41 @@
   width: 200px;
   height: 200px;
 }
+
+.scanner-default-link {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #007bff; /* Blue border color */
+  background-color: #e7f0ff; /* Light blue background */
+  margin-bottom: 20px; /* Space between the two divisions */
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em; /* Larger text */
+  cursor: pointer;
+  text-align: center;
+}
+
+.scanner-default-link:hover {
+  background-color: #d0e2ff; /* Slightly darker blue on hover */
+}
+
+.scanner-compatibility-link {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffa500; /* Orange background */
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em; /* Larger text */
+  cursor: pointer;
+  text-align: center;
+}
+
+.scanner-compatibility-link:hover {
+  background-color: #ffbf00; /* Slightly darker orange on hover */
+}
