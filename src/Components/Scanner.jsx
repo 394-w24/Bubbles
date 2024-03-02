@@ -44,7 +44,8 @@ const Translations = ({translations}) => {
   const arrayOfSymbols = [].concat(...arrayOfSymbolArrays);
   const requestedSymbols = arrayOfSymbols.filter(symbol => translations.includes(symbol.id));
   // console.log(requestedSymbols);
-  return (<div className="translations">
+  return (
+  <div className="translations">
     <ul>
     {requestedSymbols.map((symbol) => (
         <li key={symbol.id}>
@@ -53,7 +54,8 @@ const Translations = ({translations}) => {
         </li>
       ))}
     </ul>
-    </div>);
+    </div>
+    );
 }
 
 const Scanner = ({ user }) => {
