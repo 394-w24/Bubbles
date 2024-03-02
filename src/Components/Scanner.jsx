@@ -19,6 +19,16 @@ import { getInstructions } from "./FunctionCallTest";
 import { TrySharp } from "@mui/icons-material";
 import data from "../../data/symbol.json";
 
+
+import { getAuth } from "firebase/auth";
+import { database } from "../Utilities/firebase";
+
+// Add `get` to your existing imports from "firebase/database"
+import { getDatabase, ref, update, get, set } from "firebase/database";
+
+
+
+
 const transformTranslations = (arr) => {
   // console.log(`called transform translations with ${arr}`);
   // console.log("transform", arr);
@@ -99,6 +109,14 @@ const Scanner = ({ user }) => {
     // directly upload the image to Firebase
     try{
       setProcessingImage(true);
+
+      // Call the upload function here to upload the captured image to Firebase
+      // const downloadURL = await uploadImageToFirebase(imageSrc);
+      // updating the database
+      await uploadImageAndStoreUrl(imageSrc);
+      /*
+        TO BE UPDATED NEXT BECAUSE WE HAVE A REAL IMAGE URL NOW
+      */
       const translations = await getInstructions(imageSrc);
       displayTranslations(transformTranslations(translations));
     } catch (error) {
@@ -133,31 +151,131 @@ const Scanner = ({ user }) => {
   };
 
   // Upload image to Firebase
-  const uploadImageToFirebase = async (imageSrc) => {
-    // Convert imageSrc to file/blob here and upload to Firebase
-    // Implementation depends on your Firebase storage setup
-    // Convert the base64 string to a Blob
-    const imageBlob = base64StringToBlob(imageSrc, "image/jpeg");
+  // const uploadImageToFirebase = async (imageSrc) => {
+  //   // Convert imageSrc to file/blob here and upload to Firebase
+  //   // Implementation depends on your Firebase storage setup
+  //   // Convert the base64 string to a Blob
+  //   const imageBlob = base64StringToBlob(imageSrc, "image/jpeg");
 
-    // Create a reference to 'images/fileName.jpg' in Firebase Storage
-    const storageReference = storageRef(
-      storage,
-      `images/${new Date().toISOString()}.jpg`
-    );
+  //   // Create a reference to 'images/fileName.jpg' in Firebase Storage
+  //   const storageReference = storageRef(
+  //     storage,
+  //     `images/${new Date().toISOString()}.jpg`
+  //   );
 
-    try {
-      // Upload the Blob to Firebase Storage
-      const snapshot = await uploadBytes(storageReference, imageBlob);
-      console.log("Uploaded a blob or file!", snapshot);
+  //   try {
+  //     // Upload the Blob to Firebase Storage
+  //     const snapshot = await uploadBytes(storageReference, imageBlob);
+  //     console.log("Uploaded a blob or file!", snapshot);
 
-      // Optionally, get the download URL of the uploaded file
-      const downloadURL = await getDownloadURL(snapshot.ref);
-      console.log("File available at", downloadURL);
-      // You can store this URL in your database or state to display the image later
-    } catch (error) {
-      console.error("Upload failed", error);
+  //     // Optionally, get the download URL of the uploaded file
+  //     const downloadURL = await getDownloadURL(snapshot.ref);
+  //     console.log("File available at", downloadURL);
+  //     // You can store this URL in your database or state to display the image later
+  //   } catch (error) {
+  //     console.error("Upload failed", error);
+  //   }
+  // };
+// Upload image to Firebase
+const uploadImageToFirebase = async (imageSrc) => {
+  // Convert imageSrc to file/blob here and upload to Firebase
+  // Implementation depends on your Firebase storage setup
+  // Convert the base64 string to a Blob
+  const imageBlob = base64StringToBlob(imageSrc, "image/jpeg");
+
+  // Create a reference to 'images/fileName.jpg' in Firebase Storage
+  const storageReference = storageRef(
+    storage,
+    `images/${new Date().toISOString()}.jpg`
+  );
+
+  try {
+    // Upload the Blob to Firebase Storage
+    const snapshot = await uploadBytes(storageReference, imageBlob);
+    console.log("Uploaded a blob or file!", snapshot);
+
+    // Get the download URL of the uploaded file
+    const downloadURL = await getDownloadURL(snapshot.ref);
+    console.log("File available at", downloadURL);
+
+    // Return the URL so it can be used by the caller
+    return downloadURL;
+  } catch (error) {
+    console.error("Upload failed", error);
+    // Optionally, throw the error or return null to indicate failure
+    throw error; // Or return null;
+  }
+};
+
+// Assume you have a function to get the current user's ID
+function getCurrentUserId() {
+  // Initialize the Firebase Auth object
+  const auth = getAuth();
+  
+  // Get the current user
+  const user = auth.currentUser;
+
+  // Check if a user is signed in
+  if (user) {
+    return user.uid; // The user's ID, unique to the Firebase project
+  } else {
+    // No user is signed in.
+    console.log('No user is currently signed in.');
+    return null;
+  }
+}
+
+// Function to upload image and then store its URL in the Realtime Database
+// const uploadImageAndStoreUrl = async (imageSrc) => {
+//   try {
+//     // Upload the image to Firebase Storage
+//     const downloadURL = await uploadImageToFirebase(imageSrc); // Ensure this returns the download URL
+
+//     // Get the user's ID
+//     const userId = getCurrentUserId();
+
+//     // Reference to the user's uploaded_images field in the Realtime Database
+//     const imagesRef = ref(database, `users/${userId}/uploaded_images`);
+
+//     // Append the new image URL to the existing list of URLs
+//     imagesRef.transaction((currentImages) => {
+//       // If the user already has uploaded images, append the new URL
+//       if (currentImages) {
+//         return [...currentImages, downloadURL];
+//       }
+//       // If this is the first uploaded image, create an array with the URL
+//       return [downloadURL];
+//     });
+//   } catch (error) {
+//     console.error("Error uploading image and storing URL:", error);
+//   }
+// };
+const uploadImageAndStoreUrl = async (imageSrc) => {
+  try {
+    const downloadURL = await uploadImageToFirebase(imageSrc);
+    const userId = getCurrentUserId();
+    if (!userId) {
+      throw new Error("User ID is null, user might not be logged in.");
     }
-  };
+
+    const imagesRef = ref(database, `users/${userId}/uploaded_images`);
+    // Use `get` to fetch the current value
+    get(imagesRef).then((snapshot) => {
+      let images = snapshot.val() ? snapshot.val() : [];
+      images.push(downloadURL); // Append the new URL
+
+      // Update the list in the database
+      set(imagesRef, images);
+    });
+  } catch (error) {
+    console.error("Error uploading image and storing URL:", error);
+    throw error; // Or handle the error as needed
+  }
+};
+
+
+
+
 
   // Upload file to Firebase
   const uploadFileToFirebaseStorage = async (file) => {
@@ -176,6 +294,9 @@ const Scanner = ({ user }) => {
 
       {translations.length > 0 ?
       <>
+      {/* add a line here to display the captured image */}
+      {image && <img src={image} alt="Captured" />}
+      <img></img>
       <div className="scanner-translations-container">
         <Translations translations={translations} />
       </div>

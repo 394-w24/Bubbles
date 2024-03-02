@@ -94,3 +94,4 @@ export const useDbUpdate = (path) => {
 };
 
 export const storage = getStorage(firebase);
+export { ref };
