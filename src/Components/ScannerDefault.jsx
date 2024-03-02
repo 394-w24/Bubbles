@@ -59,7 +59,7 @@ const getBase64 = (file) => {
   });
 };
 
-const Scanner = ({ user }) => {
+const ScannerDefault = ({ user }) => {
   const [image, setImage] = useState("");
   const webcamRef = React.useRef(null);
   const [processingImage, setProcessingImage] = useState(false);
@@ -158,4 +158,4 @@ const Scanner = ({ user }) => {
   );
 };
 
-export default Scanner;
+export default ScannerDefault;

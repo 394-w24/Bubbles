@@ -45,8 +45,22 @@
 }
 
 .scanner-translations-container {
-  max-height: 450px;
+  max-height: 500px;
   max-width: 300px;
   margin: 20px;
   overflow-y: auto;
+}
+
+.scanner-display-image-and-translations {
+  max-height: 450px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.scanner-display-image-and-translations > img {
+  width: 200px;
+  height: 200px;
 }

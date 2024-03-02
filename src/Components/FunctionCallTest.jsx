@@ -33,45 +33,43 @@ import OpenAI from "openai";
 // }
 
 const getInstructions = async (url) => {
-    try {
-        const functions = getFunctions(firebase);
-        const onRequestExample2 = httpsCallable(functions, 'getAPIkey');
-        console.log(1);
+  try {
+    const functions = getFunctions(firebase);
+    const onRequestExample2 = httpsCallable(functions, "getAPIkey");
+    console.log(1);
 
-        // Await the call to onRequestExample2
-        const result = await onRequestExample2();
-        var key = result.data["res"];
+    // Await the call to onRequestExample2
+    const result = await onRequestExample2();
+    var key = result.data["res"];
 
-        // Now await the result of getGPT
-        const res = await getGPT(key, url);
-        console.log(res);
-        console.log(1);
+    // Now await the result of getGPT
+    const res = await getGPT(key, url);
+    console.log(res);
+    console.log(1);
 
-        // This return value will be wrapped in a Promise because the function is async
-        return res.split(",");
-    } catch (error) {
-        console.error(`error: ${error}`);
-        // It's usually a good idea to rethrow the error or handle it accordingly
-        throw error; // Rethrow or return an alternative value
-    }
+    // This return value will be wrapped in a Promise because the function is async
+    return res.split(",");
+  } catch (error) {
+    console.error(`error: ${error}`);
+    // It's usually a good idea to rethrow the error or handle it accordingly
+    throw error; // Rethrow or return an alternative value
+  }
 };
 
-
 const getGPT = async (OPENAI_API_KEY, imageUrl) => {
-
-    const openai = new OpenAI({
-        apiKey: OPENAI_API_KEY,
-        dangerouslyAllowBrowser: true
-    });
-    const chatCompletion = await openai.chat.completions.create({
-        model: "gpt-4-vision-preview",
-        messages: [
-            {
-                role: "user",
-                content: [
-                    {
-                        type: "text",
-                        text: `You are a laundry expert who has excellent knowledge of laundry care symbols. Please analyze the image and output *just* the id values corresponding to the direct translation of each laundry symbol, using the following tables for reference:
+  const openai = new OpenAI({
+    apiKey: OPENAI_API_KEY,
+    dangerouslyAllowBrowser: true,
+  });
+  const chatCompletion = await openai.chat.completions.create({
+    model: "gpt-4-vision-preview",
+    messages: [
+      {
+        role: "user",
+        content: [
+          {
+            type: "text",
+            text: `You are a laundry expert who has excellent knowledge of laundry care symbols. Please analyze the image and output *just* the id values corresponding to the direct translation of each laundry symbol, using the following tables for reference:
                         {
                             "washing":[
                                 { "id": 0, "translation": "Machine Wash at or below 95°C/203°F!" },
@@ -125,21 +123,21 @@ const getGPT = async (OPENAI_API_KEY, imageUrl) => {
                             ]
                         
                         }.`,
-                    },
-                    {
-                        type: "image_url",
-                        image_url: {
-                            url: imageUrl,
-                            detail: "low",
-                        },
-                    },
-                ],
+          },
+          {
+            type: "image_url",
+            image_url: {
+              url: imageUrl,
+              detail: "low",
             },
+          },
         ],
-        max_tokens: 300,
-    });
-    const symbols = chatCompletion.choices[0].message.content;
-    return symbols;
-}
+      },
+    ],
+    max_tokens: 300,
+  });
+  const symbols = chatCompletion.choices[0].message.content;
+  return symbols;
+};
 
 export { getInstructions };
