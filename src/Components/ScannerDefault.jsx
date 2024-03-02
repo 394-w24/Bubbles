@@ -12,7 +12,7 @@ const transformTranslations = (arr) => {
   // console.log(`called transform translations with ${arr}`);
   // console.log("transform", arr);
   try {
-    const convertedArray = arr.map((x) => {
+    const transformedArray = arr.map((x) => {
       const num = Number(x);
       if (isNaN(num)) {
         // Check if the conversion result is NaN
@@ -20,7 +20,7 @@ const transformTranslations = (arr) => {
       }
       return num;
     });
-    return convertedArray;
+    return transformedArray;
   } catch (error) {
     console.error("Error while processing: ", error.message);
     //return arr.constructor === Array ? arr.join(", ") : arr;
