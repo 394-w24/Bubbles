@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Webcam from "react-webcam";
 import Header from "./Header";
 import NavBar from "./NavBar";
@@ -61,7 +61,7 @@ const getBase64 = (file) => {
 
 const ScannerDefault = ({ user }) => {
   const [image, setImage] = useState("");
-  const webcamRef = React.useRef(null);
+  const webcamRef = useRef(null);
   const [processingImage, setProcessingImage] = useState(false);
   const [translations, setTranslations] = useState([]);
 
@@ -71,7 +71,6 @@ const ScannerDefault = ({ user }) => {
     // console.log("displayTranslations", translations);
     if (typeof translations === "string") {
       alert(translations);
-      console.log("at after alert");
       setImage("");
       setTranslations([]);
     } else {

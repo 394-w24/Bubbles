@@ -103,3 +103,28 @@
 .scanner-compatibility-link:hover {
   background-color: #ffbf00; /* Slightly darker orange on hover */
 }
+
+.scanner-compatibilty-images > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.scanner-compatibilty-images {
+  margin-bottom: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scanner-compatibility-comparison-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.scanner-compatibility-comparison-result > button {
+  margin-top: 30px;
+}
