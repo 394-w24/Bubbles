@@ -33,10 +33,17 @@ import OpenAI from "openai";
 // }
 
 const getInstructions = async (url) => {
+  console.log(url)
+  console.log(typeof url)
+  if (!url){
+    console.log(url)
+    return ["no url/image provided"]
+  }
   try {
     const functions = getFunctions(firebase);
     const onRequestExample2 = httpsCallable(functions, "getAPIkey");
     console.log(1);
+
 
     // Await the call to onRequestExample2
     const result = await onRequestExample2();
