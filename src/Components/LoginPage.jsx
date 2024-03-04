@@ -35,7 +35,7 @@ const LoginPage = () => {
       <div className="login-page-logo">
         {/* <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Northwestern_wildcats_CMKY_80_100_0_0.svg" /> */}
         <img src="/下载.jpeg" />
-        <button type="submit" onClick={signIn}>
+        <button type="submit" data-cy="signin" onClick={signIn}>
           Sign In
         </button>
       </div>
