@@ -11,4 +11,15 @@ describe ('Test App', () => {
     cy.get('[data-cy=signin]').should('contain', 'Sign In');
   });
 
+  it('shows camera when first button clicked', () => {
+    cy.visit ('/');
+    cy.get('[data-cy=signin]').click();
+    cy.get('[data-cy=button1]').click();
+    cy.get('[data-cy=capture]').should('contain' ,'Capture Photo');
+  });
+
+  it('shows camera when first button clicked', () => {
+    cy.visit ('/ScannerDefault');
+    cy.get('[data-cy=capture]').should('contain' ,'Capture Photo');
+  });
 });

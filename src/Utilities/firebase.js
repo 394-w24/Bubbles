@@ -1,6 +1,7 @@
 // Firebase
 import { initializeApp } from "firebase/app";
-import { getDatabase, onValue, ref, update } from "firebase/database";
+import { getDatabase, onValue, ref, update, connectDatabaseEmulator } from "firebase/database";
+import { connectAuthEmulator, signInWithCredential } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { useState, useEffect, useCallback } from "react";
@@ -90,6 +91,18 @@ export const useDbUpdate = (path) => {
 
   return [updateData, result];
 };
+
+if (!globalThis.EMULATION && import.meta.env.MODE === 'development') {
+  connectAuthEmulator(auth, "http://127.0.0.1:9099");
+  connectDatabaseEmulator(database, "127.0.0.1", 9000);
+
+  signInWithCredential(auth, GoogleAuthProvider.credential(
+    '{"sub": "pBs4mNGjYSvmqCJGi1peqxOMMeuW", "email": "test@gmail.com", "displayName":"test", "email_verified": false}'
+  ));
+
+  // set flag to avoid connecting twice, e.g., because of an editor hot-reload
+  globalThis.EMULATION = true;
+}
 
 export const storage = getStorage(firebase);
 export { ref };

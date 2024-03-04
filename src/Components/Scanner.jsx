@@ -10,6 +10,7 @@ const Scanner = ({ user }) => {
       <Header user={user} />
       <div
         className="scanner-default-link"
+        data-cy="button1"
         onClick={() => navigate("/ScannerDefault")}
       >
         <span>Capture 1 Item for Instructions</span>
