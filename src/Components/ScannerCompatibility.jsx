@@ -145,7 +145,11 @@ const ScannerCompatibility = ({ user }) => {
           />
           <div className="scanner-webcam-controls">
             <button onClick={capture}>Capture Photo</button>
+            <h3>
+                Or, upload a photo from your camera reel below
+            </h3>
             <input type="file" accept="image/*" onChange={handleFileUpload} />
+            
           </div>
         </div>
       )}

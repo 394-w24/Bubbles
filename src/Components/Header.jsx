@@ -22,7 +22,9 @@ const Header = ({ user }) => {
         </IconButton>
       </div>
       <div className="header-title">
-        <h2>Bubbles</h2>
+        <img 
+          src="src/Components/Bubbles Stylistic Updates.png"
+         />
       </div>
       <div className="header-user-avatar">
         <img src={user.profile_picture} alt="User Avatar" />
