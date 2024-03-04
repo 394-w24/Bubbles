@@ -7,8 +7,6 @@ import { useState, useEffect, useCallback } from "react";
 
 import { getStorage } from "firebase/storage";
 
-import * as cors from "cors";
-
 import {
   getAuth,
   GoogleAuthProvider,
