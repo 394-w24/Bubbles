@@ -105,16 +105,22 @@ const ScannerDefault = ({ user }) => {
     }
   };
 
-//   const [isFrontCamera, setIsFrontCamera] = useState(true);
-//   useEffect(() => {
-//     if (webcamRef.current !== null) {
-//         const track = webcamRef.current.videoStream.getVideoTracks()[0];
-//         if (track) {
-//             const facingMode = track.getSettings().facingMode;
-//             setIsFrontCamera(facingMode === 'user');
-//             }
-//         }
-//     }, []);
+  const [isFrontCamera, setIsFrontCamera] = useState(true);
+  useEffect(() => {
+    const initCamera = async () => {
+      try {
+        // Attempt to access the rear camera
+        await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
+        setIsFrontCamera(true);
+      } catch (error) {
+        console.error('Failed to access rear camera:', error);
+        setIsFrontCamera(false); // Set backCam to false if facingMode: "environment" fails
+      }
+    };
+
+    initCamera();
+    console.log(isFrontCamera);
+  }, []);
 
 
   return (
@@ -153,12 +159,12 @@ const ScannerDefault = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
-            mirrored={true} 
+            mirrored={isFrontCamera} 
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
             videoConstraints={{
-                facingMode: "environment", // This tells the browser to use the rear camera by default
+                facingMode: isFrontCamera? "user" : "environment", // This tells the browser to use the rear camera by default
             }}
           />
           <div className="scanner-webcam-controls">
