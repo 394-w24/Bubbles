@@ -33,8 +33,6 @@ import OpenAI from "openai";
 // }
 
 const getInstructions = async (url) => {
-  console.log(url)
-  console.log(typeof url)
   if (!url){
     console.log(url)
     return ["no url/image provided"]

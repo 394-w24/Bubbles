@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect  } from "react";
+import React, { useState, useRef } from "react";
 import Webcam from "react-webcam";
 import Header from "./Header";
 import NavBar from "./NavBar";
@@ -79,7 +79,6 @@ const ScannerDefault = ({ user }) => {
   };
 
   const capture = async () => {
-    mirrorCam();
     const imageSrc = webcamRef.current.getScreenshot();
     try {
       setProcessingImage(true);
@@ -106,10 +105,9 @@ const ScannerDefault = ({ user }) => {
     }
   };
 
-  const [isFrontCamera, setIsFrontCamera] = useState(false);
-  
+  const [scaleX, setScaleX] = useState(1);
   const mirrorCam = () => {
-    setIsFrontCamera(!isFrontCamera);
+    setScaleX(0 - scaleX);
   }
 
 
@@ -149,7 +147,7 @@ const ScannerDefault = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
-            mirrored={isFrontCamera} 
+            style = {{transform: `scaleX(${scaleX})`}}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"

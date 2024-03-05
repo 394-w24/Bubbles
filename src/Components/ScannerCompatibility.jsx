@@ -111,6 +111,12 @@ const ScannerCompatibility = ({ user }) => {
     }
   };
 
+  const [isFrontCamera, setIsFrontCamera] = useState(true);
+  const [scaleX, setScaleX] = useState(-1);
+  const mirrorCam = () => {
+    setScaleX(0 - scaleX);
+  }
+
   return (
     <div className="scanner">
       <Header user={user} />
@@ -139,12 +145,19 @@ const ScannerCompatibility = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
+            style = {{transform: `scaleX(${scaleX})`}}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
+            videoConstraints={{
+              facingMode: "environment", // This tells the browser to use the rear camera by default
+            }}
           />
           <div className="scanner-webcam-controls">
+            <div className="scanner-webcam-buttons">
             <button onClick={capture}>Capture Photo</button>
+            <button onClick={mirrorCam}>Mirror Cam</button>
+            </div>
             <h3>
                 Or, upload a photo from your camera reel below
             </h3>
