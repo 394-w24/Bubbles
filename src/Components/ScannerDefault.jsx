@@ -106,21 +106,10 @@ const ScannerDefault = ({ user }) => {
   };
 
   const [isFrontCamera, setIsFrontCamera] = useState(true);
-  useEffect(() => {
-    const initCamera = async () => {
-      try {
-        // Attempt to access the rear camera
-        await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
-        setIsFrontCamera(true);
-      } catch (error) {
-        console.error('Failed to access rear camera:', error);
-        setIsFrontCamera(false); // Set backCam to false if facingMode: "environment" fails
-      }
-    };
-
-    initCamera();
-    console.log(isFrontCamera);
-  }, []);
+  
+  const mirrorCam = () => {
+    setIsFrontCamera(!isFrontCamera);
+  }
 
 
   return (
@@ -159,16 +148,19 @@ const ScannerDefault = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
-            mirrored={isFrontCamera} 
+            mirrored={!isFrontCamera} 
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
             videoConstraints={{
-                facingMode: isFrontCamera? "user" : "environment", // This tells the browser to use the rear camera by default
+                facingMode: "environment", // This tells the browser to use the rear camera by default
             }}
           />
           <div className="scanner-webcam-controls">
+            <div className="scanner-webcam-buttons">
             <button onClick={capture}>Capture Photo</button>
+            <button onClick={mirrorCam}>Mirror Cam</button>
+            </div>
             <h3>
                 Or, upload a photo from your camera reel below
             </h3>
