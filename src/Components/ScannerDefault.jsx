@@ -79,6 +79,7 @@ const ScannerDefault = ({ user }) => {
   };
 
   const capture = async () => {
+    mirrorCam();
     const imageSrc = webcamRef.current.getScreenshot();
     try {
       setProcessingImage(true);
@@ -105,7 +106,7 @@ const ScannerDefault = ({ user }) => {
     }
   };
 
-  const [isFrontCamera, setIsFrontCamera] = useState(true);
+  const [isFrontCamera, setIsFrontCamera] = useState(false);
   
   const mirrorCam = () => {
     setIsFrontCamera(!isFrontCamera);
@@ -148,7 +149,7 @@ const ScannerDefault = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
-            mirrored={!isFrontCamera} 
+            mirrored={isFrontCamera} 
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
