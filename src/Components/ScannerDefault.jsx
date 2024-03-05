@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect  } from "react";
 import Webcam from "react-webcam";
 import Header from "./Header";
 import NavBar from "./NavBar";
@@ -105,6 +105,18 @@ const ScannerDefault = ({ user }) => {
     }
   };
 
+//   const [isFrontCamera, setIsFrontCamera] = useState(true);
+//   useEffect(() => {
+//     if (webcamRef.current !== null) {
+//         const track = webcamRef.current.videoStream.getVideoTracks()[0];
+//         if (track) {
+//             const facingMode = track.getSettings().facingMode;
+//             setIsFrontCamera(facingMode === 'user');
+//             }
+//         }
+//     }, []);
+
+
   return (
     <div className="scanner">
       <Header user={user} />
@@ -141,9 +153,13 @@ const ScannerDefault = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
+            mirrored={true} 
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
+            videoConstraints={{
+                facingMode: "environment", // This tells the browser to use the rear camera by default
+            }}
           />
           <div className="scanner-webcam-controls">
             <button onClick={capture}>Capture Photo</button>

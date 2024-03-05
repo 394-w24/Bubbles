@@ -1,8 +1,8 @@
 .app {
   position: relative;
-  width: 350px;
-  height: 685px;
-  max-width: 375px;
-  max-height: 685px;
-  overflow: hidden;
+  /* min-width: 350px; */
+  width: 100vw;
+  height: 90%;
+  /* overflow-y: scroll; */
+  background-color: aliceblue;
 }

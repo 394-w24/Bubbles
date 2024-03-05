@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
 }
 
 .scanner-webcam-div {
@@ -25,12 +26,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px;
+  margin: 10px;
+  overflow-y: scroll;
   max-width: 300px;
 }
 
 .scanner-webcam-controls > h3 {
+  font-size: 18px;
   text-align: center;
+  margin:2%;
   width: 100%; /* Ensure it takes full width for text-align to effectively center the text */
 }
 
@@ -43,7 +47,7 @@
 .scanner-webcam-controls > button {
   background-color: rgb(99, 201, 238);
   color: white;
-  padding: 10px 20px;
+  padding: 10px 25px;
   font-size: 16px;
   border: 2px solid black;
   border-radius: 5px;
@@ -59,7 +63,7 @@
   width: 100%;
   height: 100%;
   max-height: 500px;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .scanner-translations-container {
