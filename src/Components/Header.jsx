@@ -23,7 +23,7 @@ const Header = ({ user }) => {
       </div>
       <div className="header-title">
         <img 
-          src="src/Components/laundrylogo.png"
+          src="/laundrylogo.png"
          />
       </div>
       <div className="header-user-avatar">
