@@ -107,7 +107,7 @@ const ScannerDefault = ({ user }) => {
 
   const [scaleX, setScaleX] = useState(1);
   const mirrorCam = () => {
-    setScaleX(0 - scaleX);
+    setScaleX(-scaleX);
   }
 
 

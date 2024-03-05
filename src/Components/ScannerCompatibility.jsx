@@ -111,10 +111,9 @@ const ScannerCompatibility = ({ user }) => {
     }
   };
 
-  const [isFrontCamera, setIsFrontCamera] = useState(true);
-  const [scaleX, setScaleX] = useState(-1);
+  const [scaleX, setScaleX] = useState(1);
   const mirrorCam = () => {
-    setScaleX(0 - scaleX);
+    setScaleX(-scaleX);
   }
 
   return (
