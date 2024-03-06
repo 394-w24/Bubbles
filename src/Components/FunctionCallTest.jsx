@@ -33,10 +33,17 @@ import OpenAI from "openai";
 // }
 
 const getInstructions = async (url) => {
+  console.log(url)
+  console.log(typeof url)
+  if (!url){
+    console.log(url)
+    return ["no url/image provided"]
+  }
   try {
     const functions = getFunctions(firebase);
     const onRequestExample2 = httpsCallable(functions, "getAPIkey");
     console.log(1);
+
 
     // Await the call to onRequestExample2
     const result = await onRequestExample2();
@@ -69,7 +76,7 @@ const getGPT = async (OPENAI_API_KEY, imageUrl) => {
         content: [
           {
             type: "text",
-            text: `You are a laundry expert who has excellent knowledge of laundry care symbols. Please analyze the image and output *just* the id values corresponding to the direct translation of each laundry symbol, using the following tables for reference:
+            text: `You are a laundry expert who has excellent knowledge of laundry care symbols. Please analyze the image and output *just* the id values corresponding to the direct translation of each laundry symbol, using the following tables for reference, and do NOT output anything else, except if you cannot read it, in that case output "There was an error reading". :
                         {
                             "washing":[
                                 { "id": 0, "translation": "Machine Wash at or below 95°C/203°F!" },

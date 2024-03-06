@@ -144,10 +144,17 @@ const ScannerDefault = ({ user }) => {
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
+            videoConstraints={{
+              facingMode: "environment", // This tells the browser to use the rear camera by default
+            }}
           />
           <div className="scanner-webcam-controls">
-            <button onClick={capture}>Capture Photo</button>
+            <button data-cy="capture" onClick={capture}>Capture Photo</button>
+            <h3>
+                Or, upload a photo from your camera reel below
+            </h3>
             <input type="file" accept="image/*" onChange={handleFileUpload} />
+            
           </div>
         </div>
       )}

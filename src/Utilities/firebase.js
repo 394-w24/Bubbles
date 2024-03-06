@@ -13,8 +13,6 @@ import { useState, useEffect, useCallback } from "react";
 
 import { getStorage } from "firebase/storage";
 
-import * as cors from "cors";
-
 import {
   getAuth,
   GoogleAuthProvider,
@@ -115,6 +113,21 @@ export const useDbUpdate = (path) => {
 
   return [updateData, result];
 };
+
+if (!globalThis.EMULATION && import.meta.env.MODE === "development") {
+  connectAuthEmulator(auth, "http://127.0.0.1:9099");
+  connectDatabaseEmulator(database, "127.0.0.1", 9000);
+
+  signInWithCredential(
+    auth,
+    GoogleAuthProvider.credential(
+      '{"sub": "pBs4mNGjYSvmqCJGi1peqxOMMeuW", "email": "test@gmail.com", "displayName":"test", "email_verified": false}'
+    )
+  );
+
+  // set flag to avoid connecting twice, e.g., because of an editor hot-reload
+  globalThis.EMULATION = true;
+}
 
 export const storage = getStorage(firebase);
 export { ref };
