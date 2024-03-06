@@ -109,7 +109,7 @@ const ScannerDefault = ({ user }) => {
     <div className="scanner">
       <Header user={user} />
 
-      {image && translations.length > 0 ? (
+      {translations.length > 0 ? (
         <div className="scanner-display-image-and-translations">
           <img src={image} alt="Captured" />
           <div className="scanner-translations-container">

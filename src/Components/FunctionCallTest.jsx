@@ -46,7 +46,7 @@ const getInstructions = async (url) => {
     const res = await getGPT(key, url);
     console.log(res);
     console.log(1);
-
+    
     // This return value will be wrapped in a Promise because the function is async
     return res.split(",");
   } catch (error) {
