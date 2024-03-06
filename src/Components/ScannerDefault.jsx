@@ -115,7 +115,7 @@ const ScannerDefault = ({ user }) => {
     <div className="scanner">
       <Header user={user} />
 
-      {image && translations.length > 0 ? (
+      {translations.length > 0 ? (
         <div className="scanner-display-image-and-translations">
           <img src={image} alt="Captured" />
           <div className="scanner-translations-container">
@@ -152,14 +152,16 @@ const ScannerDefault = ({ user }) => {
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
             videoConstraints={{
+
                 facingMode: "environment", // This tells the browser to use the rear camera by default
             }}
           />
           <div className="scanner-webcam-controls">
             <div className="scanner-webcam-buttons">
-            <button onClick={capture}>Capture Photo</button>
+            <button data-cy="capture" onClick={capture}>Capture Photo</button>
             <button onClick={mirrorCam}>Mirror Cam</button>
             </div>
+
             <h3>
                 Or, upload a photo from your camera reel below
             </h3>

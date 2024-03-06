@@ -3,9 +3,10 @@ import NavBar from "./NavBar";
 import Loading from "./Loading";
 import { getInstructions } from "./FunctionCallTest";
 import check from "../Utilities/check.mjs";
-import "./Scanner.css";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import Webcam from "react-webcam";
+import "./Scanner.css";
+import "./Instructions.css";
 
 const transformSymbolIds = (arr) => {
   // console.log(`called transform translations with ${arr}`);
@@ -36,10 +37,10 @@ const getBase64 = (file) => {
   });
 };
 
-const CompareAndDisplay = ({ images, translations }) => {
+const CompareAndDisplay = ({ translations }) => {
   const comparisonResult = check(translations[0], translations[1]);
   return (
-    <div>
+    <div className="instructions">
       <div>
         {comparisonResult.washCapatible ? (
           <>
@@ -121,14 +122,14 @@ const ScannerCompatibility = ({ user }) => {
       <Header user={user} />
       {!processingImage && images.length > 0 && (
         <div className="scanner-compatibilty-images">
-          {images.map((image) => (
-            <img key={image} src={image}></img>
+          {images.map((image, i) => (
+            <img key={`${image}-${i}`} src={image}></img>
           ))}
         </div>
       )}
       {translations.length > 1 ? (
         <div className="scanner-compatibility-comparison-result">
-          <CompareAndDisplay images={images} translations={translations} />
+          <CompareAndDisplay translations={translations} />
           <button
             onClick={() => {
               setImages([]);
@@ -155,13 +156,12 @@ const ScannerCompatibility = ({ user }) => {
           <div className="scanner-webcam-controls">
             <div className="scanner-webcam-buttons">
             <button onClick={capture}>Capture Photo</button>
+            
             <button onClick={mirrorCam}>Mirror Cam</button>
             </div>
-            <h3>
-                Or, upload a photo from your camera reel below
-            </h3>
+            <h3>Or, upload a photo from your camera reel below</h3>
+
             <input type="file" accept="image/*" onChange={handleFileUpload} />
-            
           </div>
         </div>
       )}

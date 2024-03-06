@@ -4,7 +4,6 @@ import ScannerDefault from "./Components/ScannerDefault";
 import ScannerCompatibility from "./Components/ScannerCompatibility";
 import PageNotFound from "./Components/PageNotFound";
 import Symbols from "./Components/Symbols";
-import Help from "./Components/Help";
 
 const Router = ({ user }) => {
   return (
@@ -18,7 +17,6 @@ const Router = ({ user }) => {
         element={<ScannerCompatibility user={user} />}
       />
       <Route path="/Symbols" element={<Symbols user={user} />} />
-      <Route path="/Help" element={<Help user={user} />} />
     </Routes>
   );
 };

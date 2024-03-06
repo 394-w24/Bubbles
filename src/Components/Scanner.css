@@ -25,6 +25,7 @@
 .scanner-webcam-controls {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 10px;
   overflow-y: auto;
@@ -43,6 +44,8 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 20px;
+  width: 90%;
 }
 
 .scanner-webcam-buttons > button {
@@ -58,7 +61,11 @@
 }
 
 .scanner-webcam-controls > button:hover {
-  background-color: rgb(40, 154, 236); /* Slightly darker blue on hover for visual feedback */
+  background-color: rgb(
+    40,
+    154,
+    236
+  ); /* Slightly darker blue on hover for visual feedback */
 }
 
 .scanner-content {

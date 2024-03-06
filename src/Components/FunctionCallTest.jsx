@@ -36,12 +36,12 @@ const getInstructions = async (url) => {
   if (!url){
     console.log(url)
     return ["no url/image provided"]
+
   }
   try {
     const functions = getFunctions(firebase);
     const onRequestExample2 = httpsCallable(functions, "getAPIkey");
-    console.log(1);
-
+    // console.log(1);
 
     // Await the call to onRequestExample2
     const result = await onRequestExample2();
@@ -49,8 +49,8 @@ const getInstructions = async (url) => {
 
     // Now await the result of getGPT
     const res = await getGPT(key, url);
-    console.log(res);
-    console.log(1);
+    // console.log(res);
+    // console.log(1);
 
     // This return value will be wrapped in a Promise because the function is async
     return res.split(",");
