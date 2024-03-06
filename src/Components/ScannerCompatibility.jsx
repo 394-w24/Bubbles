@@ -116,8 +116,8 @@ const ScannerCompatibility = ({ user }) => {
       <Header user={user} />
       {!processingImage && images.length > 0 && (
         <div className="scanner-compatibilty-images">
-          {images.map((image) => (
-            <img key={image} src={image}></img>
+          {images.map((image, i) => (
+            <img key={`${image}-${i}`} src={image}></img>
           ))}
         </div>
       )}
@@ -145,11 +145,8 @@ const ScannerCompatibility = ({ user }) => {
           />
           <div className="scanner-webcam-controls">
             <button onClick={capture}>Capture Photo</button>
-            <h3>
-                Or, upload a photo from your camera reel below
-            </h3>
+            <h3>Or, upload a photo from your camera reel below</h3>
             <input type="file" accept="image/*" onChange={handleFileUpload} />
-            
           </div>
         </div>
       )}

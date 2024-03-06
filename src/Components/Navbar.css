@@ -41,6 +41,10 @@
   text-align: center;
 }
 
+.nav-item > span {
+  margin-bottom: 5px;
+}
+
 button {
   background: none;
   border: none;
@@ -49,8 +53,4 @@ button {
 
 button:focus {
   outline: none;
-}
-
-span {
-  margin-top: 5px;
 }
