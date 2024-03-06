@@ -1,6 +1,7 @@
 .header {
-  height: 70px; /* A more suitable height for mobile touch targets */
-  padding: 0 15px; /* Side padding for some breathing room */
+  height: 60px; /* A more suitable height for mobile touch targets */
+  padding: 0 0px; /* Side padding for some breathing room */
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;

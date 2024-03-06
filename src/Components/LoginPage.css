@@ -19,8 +19,6 @@
 .login-page-logo > img {
   width: 250px;
   height: 250px;
-  /* clip-path: inset(0 40px 0 0); top right bottom left */
-  margin-right: -30px;
 }
 
 .login-page-logo > h1 {

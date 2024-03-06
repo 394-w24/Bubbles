@@ -4,8 +4,9 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 10px 0px;
+  justify-content: space-between; /* This will space out the nav items */
+  padding: 5px 0px; /* Reduced padding to make the bar narrower */
+  background-color: #f8f8f8; /* Example background color */
 }
 
 .nav-bar > div {
@@ -18,19 +19,11 @@
 
 .nav-bar button {
   width: 50px;
-  height: 50px;
+  height: 30px;
 }
 
 .nav-bar button:hover {
   cursor: pointer;
-}
-
-/* Navbar.css */
-.nav-bar {
-  display: flex;
-  justify-content: space-between; /* This will space out the nav items */
-  padding: 0px 10px; /* Reduced padding to make the bar narrower */
-  background-color: #f8f8f8; /* Example background color */
 }
 
 .nav-item {
@@ -53,4 +46,8 @@ button {
 
 button:focus {
   outline: none;
+}
+
+span {
+  margin-top: 0px;
 }

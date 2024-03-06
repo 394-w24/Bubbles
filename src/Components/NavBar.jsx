@@ -1,7 +1,10 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import InterestsIcon from "@mui/icons-material/Interests";
-import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined"; // Changed to CameraAltOutlinedIcon
+
+import InterestsIcon from '@mui/icons-material/Interests';
+import HomeIcon from "@mui/icons-material/Home"; // Changed to CameraAltOutlinedIcon
+// import HelpIcon from "@mui/icons-material/Help";
+
 import "./Navbar.css";
 
 const NavBar = () => {
@@ -23,12 +26,12 @@ const NavBar = () => {
       </div>
       <div className={`nav-item ${isActive("/Scanner") ? "active" : ""}`}>
         <button onClick={() => navigate("/Scanner")}>
-          <CameraAltOutlinedIcon
+          <HomeIcon 
             color={isActive("/Scanner") | isActive("/") ? "primary" : "action"}
           />{" "}
           {/* Used CameraAltOutlinedIcon */}
         </button>
-        <span>SCANNER</span>
+        <span>HOME</span>
       </div>
     </footer>
   );
