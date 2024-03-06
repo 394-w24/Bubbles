@@ -3,9 +3,10 @@ import NavBar from "./NavBar";
 import Loading from "./Loading";
 import { getInstructions } from "./FunctionCallTest";
 import check from "../Utilities/check.mjs";
-import "./Scanner.css";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import Webcam from "react-webcam";
+import "./Scanner.css";
+import "./Instructions.css";
 
 const transformSymbolIds = (arr) => {
   // console.log(`called transform translations with ${arr}`);
@@ -36,10 +37,10 @@ const getBase64 = (file) => {
   });
 };
 
-const CompareAndDisplay = ({ images, translations }) => {
+const CompareAndDisplay = ({ translations }) => {
   const comparisonResult = check(translations[0], translations[1]);
   return (
-    <div>
+    <div className="instructions">
       <div>
         {comparisonResult.washCapatible ? (
           <>
@@ -123,7 +124,7 @@ const ScannerCompatibility = ({ user }) => {
       )}
       {translations.length > 1 ? (
         <div className="scanner-compatibility-comparison-result">
-          <CompareAndDisplay images={images} translations={translations} />
+          <CompareAndDisplay translations={translations} />
           <button
             onClick={() => {
               setImages([]);
