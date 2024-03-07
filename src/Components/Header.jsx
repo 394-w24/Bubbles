@@ -17,9 +17,11 @@ const Header = ({ user }) => {
     <header className="header">
       <div className="header-sign-out">
         {/* Use IconButton for an icon-only button */}
+
         <IconButton color="inherit" onClick={signOut} aria-label="sign out">
           <LogoutOutlinedIcon />
         </IconButton>
+        
       </div>
       <div className="header-title">
         <img 

@@ -36,7 +36,6 @@ const Symbols = ({ user }) => {
 
   return (
     <div className="symbols">
-      <Header user={user} />
       <div className="symbols-content">
         <div className="translations">
           <h3>Translations</h3>
@@ -62,7 +61,6 @@ const Symbols = ({ user }) => {
           ))}
         </div>
       </div>
-      <NavBar />
     </div>
   );
 };

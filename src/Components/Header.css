@@ -1,5 +1,5 @@
 .header {
-  height: 60px; /* A more suitable height for mobile touch targets */
+  height: 65px; /* A more suitable height for mobile touch targets */
   padding: 0 0px; /* Side padding for some breathing room */
 
   display: flex;

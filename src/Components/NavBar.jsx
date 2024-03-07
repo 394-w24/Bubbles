@@ -19,19 +19,19 @@ const NavBar = () => {
   return (
     <footer className="nav-bar">
       <div className={`nav-item ${isActive("/Symbols") ? "active" : ""}`}>
-        <button onClick={() => navigate("/Symbols")}>
+        <button className = "nav-button" onClick={() => navigate("/Symbols")}>
           <InterestsIcon color={isActive("/Symbols") ? "primary" : "action"} />
-        </button>
         <span>SYMBOLS</span>
+        </button>
       </div>
       <div className={`nav-item ${isActive("/Scanner") ? "active" : ""}`}>
-        <button onClick={() => navigate("/Scanner")}>
+        <button className = "nav-button"  onClick={() => navigate("/Scanner")}>
           <HomeIcon 
             color={isActive("/Scanner") | isActive("/") ? "primary" : "action"}
           />{" "}
           {/* Used CameraAltOutlinedIcon */}
-        </button>
         <span>HOME</span>
+        </button>
       </div>
     </footer>
   );

@@ -9,11 +9,21 @@
 
 .symbols-content {
   width: 100%;
+  margin-top: 10%;
   max-height: 500px;
   overflow-y: auto;
+  /* margin-left: 3%; */
   position: relative;
 }
 
 .symbols-cards {
-  width: 100%;
+  width: 96%;
+  padding: 2%;
+  /* margin-left: 3%; */
+}
+
+.translations {
+  width: 96%;
+  padding: 2%;
+
 }

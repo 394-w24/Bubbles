@@ -1,5 +1,3 @@
-import Header from "./Header";
-import NavBar from "./NavBar";
 import { useNavigate } from "react-router-dom";
 import "./Scanner.css";
 
@@ -7,7 +5,6 @@ const Scanner = ({ user }) => {
   const navigate = useNavigate();
   return (
     <div className="scanner">
-      <Header user={user} />
       <div
         className="scanner-default-link"
         data-cy="button1"
@@ -21,7 +18,6 @@ const Scanner = ({ user }) => {
       >
         <span>Capture 2 Items for Compatibility</span>
       </div>
-      <NavBar />
     </div>
   );
 };

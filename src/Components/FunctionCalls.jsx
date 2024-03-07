@@ -2,41 +2,11 @@ import { getFunctions, httpsCallable } from "firebase/functions";
 import { firebase } from "../Utilities/firebase";
 import OpenAI from "openai";
 
-// const getInstructions = async (url) => {
-
-//     const functions = getFunctions(firebase);
-//     const onRequestExample2 = httpsCallable(functions, 'getAPIkey');
-//     console.log(1)
-
-//     onRequestExample2().then((result) => {
-
-//         var key = result.data["res"]
-
-//         // console.log(key)
-
-//         // var res = "7, 14, 17, 29, 34"
-//         // console.log(res.split(", "))
-
-//         getGPT(key, url).then((res) => {
-//             // Perform the API call
-//             console.log(res)
-//             console.log(1)
-//             return res.split(", ")
-//         })
-
-//     }).catch((error) => {
-//         console.error(`error: ${error}`);
-//     });
-
-//     console.log(1)
-//     // // console.log(symbols)
-// }
 
 const getInstructions = async (url) => {
   if (!url){
     console.log(url)
     return ["no url/image provided"]
-
   }
   try {
     const functions = getFunctions(firebase);
@@ -74,7 +44,7 @@ const getGPT = async (OPENAI_API_KEY, imageUrl) => {
         content: [
           {
             type: "text",
-            text: `You are a laundry expert who has excellent knowledge of laundry care symbols. Please analyze the image and output *just* the id values corresponding to the direct translation of each laundry symbol, using the following tables for reference, and do NOT output anything else, except if you cannot read it, in that case output "There was an error reading". :
+            text: `You are a laundry expert who has excellent knowledge of laundry care symbols. Please analyze the image and output *just* the id values corresponding to the direct translation of each laundry symbol seperated by commas, using the following tables for reference, and do NOT output anything else, except if you cannot read it, in that case output "There was an error reading". :
                         {
                             "washing":[
                                 { "id": 0, "translation": "Machine Wash at or below 95°C/203°F!" },

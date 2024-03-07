@@ -1,7 +1,5 @@
-import Header from "./Header";
-import NavBar from "./NavBar";
 import Loading from "./Loading";
-import { getInstructions } from "./FunctionCallTest";
+import { getInstructions } from "./FunctionCalls";
 import check from "../Utilities/check.mjs";
 import React, { useState, useRef } from "react";
 import Webcam from "react-webcam";
@@ -119,7 +117,6 @@ const ScannerCompatibility = ({ user }) => {
 
   return (
     <div className="scanner">
-      <Header user={user} />
       {!processingImage && images.length > 0 && (
         <div className="scanner-compatibilty-images">
           {images.map((image, i) => (
@@ -165,7 +162,6 @@ const ScannerCompatibility = ({ user }) => {
           </div>
         </div>
       )}
-      <NavBar />
     </div>
   );
 };
