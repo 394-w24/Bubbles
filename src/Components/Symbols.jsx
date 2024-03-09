@@ -37,7 +37,7 @@ const Symbols = ({ user }) => {
   return (
     <div className="symbols">
       <div className="symbols-content">
-        <div className="translations">
+        <div data-testid="translations" className="translations">
           <h3>Translations</h3>
           {thereExistsSelection(selections) && (
             <Translations data={data} selections={selections} />

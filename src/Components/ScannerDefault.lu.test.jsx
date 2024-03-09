@@ -44,8 +44,6 @@ describe("ScannerDefault", () => {
     });
 
     const capturedImage = screen.getByAltText("Captured");
-    // console.log(screen.getByAltText('Captured'))
     expect(screen.getByAltText("Captured")).toBeInstanceOf(HTMLImageElement);
-    console.log(capturedImage.outerHTML);
   });
 });
