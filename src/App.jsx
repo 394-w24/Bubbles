@@ -18,7 +18,6 @@ const App = () => {
     <div className="app">
       {user ? (
         userData ? (
-            
           <BrowserRouter>
             <Header user={userData} />
             <Router user={userData} />
