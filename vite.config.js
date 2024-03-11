@@ -10,6 +10,5 @@ export default defineConfig({
     coverage: {
       reporter: ["text", "json", "html"],
     },
-    mockReset: true
   },
 });
