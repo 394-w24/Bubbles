@@ -36,9 +36,8 @@ const Symbols = ({ user }) => {
 
   return (
     <div className="symbols">
-      <Header user={user} />
       <div className="symbols-content">
-        <div className="translations">
+        <div data-testid="translations" className="translations">
           <h3>Translations</h3>
           {thereExistsSelection(selections) && (
             <Translations data={data} selections={selections} />
@@ -62,7 +61,6 @@ const Symbols = ({ user }) => {
           ))}
         </div>
       </div>
-      <NavBar />
     </div>
   );
 };

@@ -2,41 +2,16 @@ import { getFunctions, httpsCallable } from "firebase/functions";
 import { firebase } from "../Utilities/firebase";
 import OpenAI from "openai";
 
-// const getInstructions = async (url) => {
-
-//     const functions = getFunctions(firebase);
-//     const onRequestExample2 = httpsCallable(functions, 'getAPIkey');
-//     console.log(1)
-
-//     onRequestExample2().then((result) => {
-
-//         var key = result.data["res"]
-
-//         // console.log(key)
-
-//         // var res = "7, 14, 17, 29, 34"
-//         // console.log(res.split(", "))
-
-//         getGPT(key, url).then((res) => {
-//             // Perform the API call
-//             console.log(res)
-//             console.log(1)
-//             return res.split(", ")
-//         })
-
-//     }).catch((error) => {
-//         console.error(`error: ${error}`);
-//     });
-
-//     console.log(1)
-//     // // console.log(symbols)
-// }
 
 const getInstructions = async (url) => {
+  if (!url){
+    console.log(url)
+    return ["no url/image provided"]
+  }
   try {
     const functions = getFunctions(firebase);
     const onRequestExample2 = httpsCallable(functions, "getAPIkey");
-    console.log(1);
+    // console.log(1);
 
     // Await the call to onRequestExample2
     const result = await onRequestExample2();
@@ -44,8 +19,8 @@ const getInstructions = async (url) => {
 
     // Now await the result of getGPT
     const res = await getGPT(key, url);
-    console.log(res);
-    console.log(1);
+    // console.log(res);
+    // console.log(1);
 
     // This return value will be wrapped in a Promise because the function is async
     return res.split(",");
@@ -69,7 +44,7 @@ const getGPT = async (OPENAI_API_KEY, imageUrl) => {
         content: [
           {
             type: "text",
-            text: `You are a laundry expert who has excellent knowledge of laundry care symbols. Please analyze the image and output *just* the id values corresponding to the direct translation of each laundry symbol, using the following tables for reference:
+            text: `You are a laundry expert who has excellent knowledge of laundry care symbols. Please analyze the image and output *just* the id values corresponding to the direct translation of each laundry symbol seperated by commas, using the following tables for reference, and do NOT output anything else, except if you cannot read it, in that case output "There was an error reading". :
                         {
                             "washing":[
                                 { "id": 0, "translation": "Machine Wash at or below 95°C/203°F!" },

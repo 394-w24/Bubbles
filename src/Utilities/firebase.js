@@ -1,13 +1,17 @@
 // Firebase
 import { initializeApp } from "firebase/app";
-import { getDatabase, onValue, ref, update } from "firebase/database";
+import {
+  getDatabase,
+  onValue,
+  ref,
+  update,
+  connectDatabaseEmulator,
+} from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { useState, useEffect, useCallback } from "react";
 
 import { getStorage } from "firebase/storage";
-
-import * as cors from "cors";
 
 import {
   getAuth,
@@ -15,6 +19,8 @@ import {
   onAuthStateChanged,
   signInWithPopup,
   signOut,
+  connectAuthEmulator,
+  signInWithCredential,
 } from "firebase/auth";
 
 const firebaseConfig = {
@@ -36,6 +42,21 @@ export const auth = getAuth(firebase);
 
 // Initialize Realtime Database and get a reference to the service
 export const database = getDatabase(firebase);
+
+// if (!globalThis.EMULATION && import.meta.env.MODE === "development") {
+//   connectAuthEmulator(auth, "http://127.0.0.1:9099");
+//   connectDatabaseEmulator(database, "127.0.0.1", 9000);
+
+//   signInWithCredential(
+//     auth,
+//     GoogleAuthProvider.credential(
+//       '{"sub": "8samJMQczxqmleJ2gyaPmFpImk55", "email": "john.doe@gmail.com", "displayName":"John Doe", "email_verified": true}'
+//     )
+//   );
+
+//   // set flag to avoid connecting twice, e.g., because of an editor hot-reload
+//   globalThis.EMULATION = true;
+// }
 
 export const signInWithGoogle = () =>
   signInWithPopup(getAuth(firebase), new GoogleAuthProvider());

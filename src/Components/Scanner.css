@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 }
 
 .scanner-webcam-div {
@@ -24,13 +25,18 @@
 .scanner-webcam-controls {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 5px;
-  max-width: 300px;
+  margin: 10px;
+  overflow-y: auto;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 .scanner-webcam-controls > h3 {
+  font-size: 18px;
   text-align: center;
+  margin:2%;
   width: 100%; /* Ensure it takes full width for text-align to effectively center the text */
 }
 
@@ -38,13 +44,16 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 20px;
+  width: 90%;
 }
 
-.scanner-webcam-controls > button {
+.scanner-webcam-buttons > button {
   background-color: rgb(99, 201, 238);
   color: white;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 8px 10px;
+  margin-inline: 3px;
+  font-size: 15px;
   border: 2px solid black;
   border-radius: 5px;
   cursor: pointer;
@@ -52,7 +61,11 @@
 }
 
 .scanner-webcam-controls > button:hover {
-  background-color: rgb(40, 154, 236); /* Slightly darker blue on hover for visual feedback */
+  background-color: rgb(
+    40,
+    154,
+    236
+  ); /* Slightly darker blue on hover for visual feedback */
 }
 
 .scanner-content {
@@ -63,15 +76,15 @@
 }
 
 .scanner-translations-container {
-  max-height: 500px;
-  max-width: 300px;
+  max-height: 100%;
+  max-width: 100%;
   margin: 20px;
   overflow-y: auto;
 }
 
 .scanner-display-image-and-translations {
-  max-height: 450px;
-  max-width: 300px;
+  max-height: 80%;
+  max-width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;

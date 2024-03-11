@@ -120,3 +120,5 @@ functions/__pycache__
 functions/.env
 coverage/
 .vscode/
+cypress/
+saved-data/

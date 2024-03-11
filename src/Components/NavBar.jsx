@@ -1,8 +1,10 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+
 import InterestsIcon from '@mui/icons-material/Interests';
-import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined"; // Changed to CameraAltOutlinedIcon
-import HelpIcon from "@mui/icons-material/Help";
+import HomeIcon from "@mui/icons-material/Home"; // Changed to CameraAltOutlinedIcon
+// import HelpIcon from "@mui/icons-material/Help";
+
 import "./Navbar.css";
 
 const NavBar = () => {
@@ -17,26 +19,20 @@ const NavBar = () => {
   return (
     <footer className="nav-bar">
       <div className={`nav-item ${isActive("/Symbols") ? "active" : ""}`}>
-        <button onClick={() => navigate("/Symbols")}>
+        <button className = "nav-button" onClick={() => navigate("/Symbols")}>
           <InterestsIcon color={isActive("/Symbols") ? "primary" : "action"} />
-        </button>
         <span>SYMBOLS</span>
+        </button>
       </div>
       <div className={`nav-item ${isActive("/Scanner") ? "active" : ""}`}>
-        <button onClick={() => navigate("/Scanner")}>
-          <CameraAltOutlinedIcon
+        <button className = "nav-button"  onClick={() => navigate("/Scanner")}>
+          <HomeIcon 
             color={isActive("/Scanner") | isActive("/") ? "primary" : "action"}
           />{" "}
           {/* Used CameraAltOutlinedIcon */}
+        <span>HOME</span>
         </button>
-        <span>SCANNER</span>
       </div>
-      {/*<div className={`nav-item ${isActive("/Help") ? "active" : ""}`}>
-        <button onClick={() => navigate("/Help")}>
-          <HelpIcon color={isActive("/Help") ? "primary" : "action"} />
-        </button>
-        <span>HELP</span>
-  </div>*/}
     </footer>
   );
 };

@@ -1,14 +1,15 @@
 import React, { useState, useRef } from "react";
 import Webcam from "react-webcam";
-import Header from "./Header";
-import NavBar from "./NavBar";
 import "./Scanner.css";
 import "./Translations.css";
 import Loading from "./Loading";
-import { getInstructions } from "./FunctionCallTest";
 import data from "../../data/symbol.json";
+// import { getIcos } from "./AccessFuncs";
+import { getInstructions } from "./FunctionCalls";
 
-const transformTranslations = (arr) => {
+var done = false;
+
+export const transformTranslations = (arr) => {
   // console.log(`called transform translations with ${arr}`);
   // console.log("transform", arr);
   try {
@@ -28,7 +29,7 @@ const transformTranslations = (arr) => {
   }
 };
 
-const Translations = ({ translations }) => {
+export const Translations = ({ translations }) => {
   // console.log(translations);
   const arrayOfSymbolArrays = Object.keys(data).map((header) => data[header]);
   const arrayOfSymbols = [].concat(...arrayOfSymbolArrays);
@@ -50,7 +51,7 @@ const Translations = ({ translations }) => {
   );
 };
 
-const getBase64 = (file) => {
+export const getBase64 = (file) => {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.readAsDataURL(file);
@@ -68,7 +69,7 @@ const ScannerDefault = ({ user }) => {
   const displayTranslations = (translations) => {
     // Image Processed
     setProcessingImage(false);
-    // console.log("displayTranslations", translations);
+    done = true;
     if (typeof translations === "string") {
       alert(translations);
       setImage("");
@@ -76,6 +77,7 @@ const ScannerDefault = ({ user }) => {
     } else {
       setTranslations(translations);
     }
+    
   };
 
   const capture = async () => {
@@ -87,6 +89,7 @@ const ScannerDefault = ({ user }) => {
       setImage(imageSrc);
     } catch (error) {
       console.error("Error while processing image:", error);
+      return -1;
     }
   };
 
@@ -105,11 +108,15 @@ const ScannerDefault = ({ user }) => {
     }
   };
 
+  const [scaleX, setScaleX] = useState(1);
+  const mirrorCam = () => {
+    setScaleX(-scaleX);
+  }
+
+
   return (
     <div className="scanner">
-      <Header user={user} />
-
-      {image && translations.length > 0 ? (
+      {translations.length > 0 ? (
         <div className="scanner-display-image-and-translations">
           <img src={image} alt="Captured" />
           <div className="scanner-translations-container">
@@ -141,15 +148,21 @@ const ScannerDefault = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
+            style = {{transform: `scaleX(${scaleX})`}}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
             videoConstraints={{
-              facingMode: "environment", // This tells the browser to use the rear camera by default
+
+                facingMode: "environment", // This tells the browser to use the rear camera by default
             }}
           />
           <div className="scanner-webcam-controls">
-            <button onClick={capture}>Capture Photo</button>
+            <div className="scanner-webcam-buttons">
+            <button data-testid="capture button" data-cy="capture" onClick={capture}>Capture Photo</button>
+            <button onClick={mirrorCam}>Mirror Cam</button>
+            </div>
+
             <h3>
                 Or, upload a photo from your camera reel below
             </h3>
@@ -158,10 +171,9 @@ const ScannerDefault = ({ user }) => {
           </div>
         </div>
       )}
-
-      <NavBar />
     </div>
   );
 };
 
+export {done};
 export default ScannerDefault;
