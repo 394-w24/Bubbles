@@ -4,39 +4,17 @@ import "./Scanner.css";
 import "./Translations.css";
 import Loading from "./Loading";
 import data from "../../data/symbol.json";
-// import { getIcos } from "./AccessFuncs";
 import { getInstructions } from "./FunctionCalls";
+import { transformSymbolIds, getBase64 } from "../Utilities/scanner";
 
 var done = false;
 
-export const transformTranslations = (arr) => {
-  // console.log(`called transform translations with ${arr}`);
-  // console.log("transform", arr);
-  try {
-    const transformedArray = arr.map((x) => {
-      const num = Number(x);
-      if (isNaN(num)) {
-        // Check if the conversion result is NaN
-        throw new Error(`Cannot convert "${x}" to a Number`);
-      }
-      return num;
-    });
-    return transformedArray;
-  } catch (error) {
-    console.error("Error while processing: ", error.message);
-    //return arr.constructor === Array ? arr.join(", ") : arr;
-    return arr.join(", ");
-  }
-};
-
 export const Translations = ({ translations }) => {
-  // console.log(translations);
   const arrayOfSymbolArrays = Object.keys(data).map((header) => data[header]);
   const arrayOfSymbols = [].concat(...arrayOfSymbolArrays);
   const requestedSymbols = arrayOfSymbols.filter((symbol) =>
     translations.includes(symbol.id)
   );
-  // console.log(requestedSymbols);
   return (
     <div className="translations">
       <ul>
@@ -49,15 +27,6 @@ export const Translations = ({ translations }) => {
       </ul>
     </div>
   );
-};
-
-export const getBase64 = (file) => {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = (error) => reject(error);
-  });
 };
 
 const ScannerDefault = ({ user }) => {
@@ -77,7 +46,6 @@ const ScannerDefault = ({ user }) => {
     } else {
       setTranslations(translations);
     }
-    
   };
 
   const capture = async () => {
@@ -85,7 +53,7 @@ const ScannerDefault = ({ user }) => {
     try {
       setProcessingImage(true);
       const translations = await getInstructions(imageSrc);
-      displayTranslations(transformTranslations(translations));
+      displayTranslations(transformSymbolIds(translations));
       setImage(imageSrc);
     } catch (error) {
       console.error("Error while processing image:", error);
@@ -101,7 +69,7 @@ const ScannerDefault = ({ user }) => {
       setProcessingImage(true);
       const base64Image = await getBase64(file);
       const translations = await getInstructions(base64Image);
-      displayTranslations(transformTranslations(translations));
+      displayTranslations(transformSymbolIds(translations));
       setImage(base64Image);
     } catch (error) {
       console.error("Error while processing image:", error);
@@ -111,8 +79,7 @@ const ScannerDefault = ({ user }) => {
   const [scaleX, setScaleX] = useState(1);
   const mirrorCam = () => {
     setScaleX(-scaleX);
-  }
-
+  };
 
   return (
     <div className="scanner">
@@ -148,26 +115,28 @@ const ScannerDefault = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
-            style = {{transform: `scaleX(${scaleX})`}}
+            style={{ transform: `scaleX(${scaleX})` }}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
             videoConstraints={{
-
-                facingMode: "environment", // This tells the browser to use the rear camera by default
+              facingMode: "environment", // This tells the browser to use the rear camera by default
             }}
           />
           <div className="scanner-webcam-controls">
             <div className="scanner-webcam-buttons">
-            <button data-testid="capture button" data-cy="capture" onClick={capture}>Capture Photo</button>
-            <button onClick={mirrorCam}>Mirror Cam</button>
+              <button
+                data-testid="capture button"
+                data-cy="capture"
+                onClick={capture}
+              >
+                Capture Photo
+              </button>
+              <button onClick={mirrorCam}>Mirror Cam</button>
             </div>
 
-            <h3>
-                Or, upload a photo from your camera reel below
-            </h3>
+            <h3>Or, upload a photo from your camera reel below</h3>
             <input type="file" accept="image/*" onChange={handleFileUpload} />
-            
           </div>
         </div>
       )}
@@ -175,5 +144,5 @@ const ScannerDefault = ({ user }) => {
   );
 };
 
-export {done};
+export { done };
 export default ScannerDefault;

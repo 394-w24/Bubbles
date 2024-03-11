@@ -2,11 +2,10 @@ import { getFunctions, httpsCallable } from "firebase/functions";
 import { firebase } from "../Utilities/firebase";
 import OpenAI from "openai";
 
-
 const getInstructions = async (url) => {
-  if (!url){
-    console.log(url)
-    return ["no url/image provided"]
+  if (!url) {
+    console.log(url);
+    return ["no url/image provided"];
   }
   try {
     const functions = getFunctions(firebase);

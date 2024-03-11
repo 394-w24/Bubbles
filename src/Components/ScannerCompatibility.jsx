@@ -1,39 +1,11 @@
 import Loading from "./Loading";
 import { getInstructions } from "./FunctionCalls";
 import check from "../Utilities/check.mjs";
+import { transformSymbolIds, getBase64 } from "../Utilities/scanner";
 import React, { useState, useRef } from "react";
 import Webcam from "react-webcam";
 import "./Scanner.css";
 import "./Instructions.css";
-
-const transformSymbolIds = (arr) => {
-  // console.log(`called transform translations with ${arr}`);
-  // console.log("transform", arr);
-  try {
-    const transformedArray = arr.map((x) => {
-      const num = Number(x);
-      if (isNaN(num)) {
-        // Check if the conversion result is NaN
-        throw new Error(`Cannot convert "${x}" to a Number`);
-      }
-      return num;
-    });
-    return transformedArray;
-  } catch (error) {
-    console.error("Error while processing: ", error.message);
-    //return arr.constructor === Array ? arr.join(", ") : arr;
-    return arr.join(", ");
-  }
-};
-
-const getBase64 = (file) => {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = (error) => reject(error);
-  });
-};
 
 const CompareAndDisplay = ({ translations }) => {
   const comparisonResult = check(translations[0], translations[1]);
@@ -96,7 +68,7 @@ const ScannerCompatibility = ({ user }) => {
     }
   };
 
-  // function to handle file upload (e.g., from input field)
+  // Function to handle file upload (e.g., from input field)
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
     // console.log(file);
@@ -113,7 +85,7 @@ const ScannerCompatibility = ({ user }) => {
   const [scaleX, setScaleX] = useState(1);
   const mirrorCam = () => {
     setScaleX(-scaleX);
-  }
+  };
 
   return (
     <div className="scanner">
@@ -142,7 +114,7 @@ const ScannerCompatibility = ({ user }) => {
         <div className="scanner-webcam-div">
           <Webcam
             audio={false}
-            style = {{transform: `scaleX(${scaleX})`}}
+            style={{ transform: `scaleX(${scaleX})` }}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             className="scanner-webcam"
@@ -152,9 +124,9 @@ const ScannerCompatibility = ({ user }) => {
           />
           <div className="scanner-webcam-controls">
             <div className="scanner-webcam-buttons">
-            <button onClick={capture}>Capture Photo</button>
-            
-            <button onClick={mirrorCam}>Mirror Cam</button>
+              <button onClick={capture}>Capture Photo</button>
+
+              <button onClick={mirrorCam}>Mirror Cam</button>
             </div>
             <h3>Or, upload a photo from your camera reel below</h3>
 
