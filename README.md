@@ -65,9 +65,10 @@ Note: If you want to host your app at a custom domain, you can set this up in th
 To deploy your Firebase Functions, follow these steps:
 
 1. Make sure you have set up Firebase Functions as described in the previous section.
-2. Write your functions in the `functions` directory of your project.
-3. Run `firebase deploy --only functions` to deploy your functions to Firebase. Alternatively use `firebase deploy --only functions:myFunction` to specifically deploy/update only the function `myFunction`.
-4. Once the deployment is complete, your functions will be live and can be invoked using their HTTPS trigger URL.
+2. (Optional) If you ever want to add additional functions, put them in the `functions` directory.
+3. Run `firebase deploy --only functions` to deploy the functions to Firebase. 
+    - (Optional) use `firebase deploy --only functions:myFunction` to specifically deploy/update only the function `myFunction`.
+4. Once the deployment is complete, the functions will be show up on the "Functions" tab of the Firebase project.
 
 
 ## Additonal Notes
