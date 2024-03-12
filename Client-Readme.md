@@ -26,12 +26,12 @@ A brief description of what the project does.
 
 1. Create a Firebase account: Go to the Firebase console (https://console.firebase.google.com/) and sign up.
 2. Create a new project in the Firebase console.
-3. In the project settings, go to the "Service Accounts" tab and click "Firebase Admin SDK". Then click "Generate new private key" to download a JSON file with your Firebase configuration data.
-4. Rename this file to `firebase-config.json` and place it in the root directory of the project.
-5. Set up Firebase Hosting: Run `firebase init` in the project directory and follow the prompts to set up hosting.
-6. Set up Realtime Database: In the Firebase console, go to "Database" and then "Create Database". Choose the "Realtime Database" option and follow the prompts.
-7. Set up Firebase Functions v2: Run `firebase init functions` in the project directory and follow the prompts. Make sure to choose the "Functions v2" option.
-8. Set up Firebase Storage: In the Firebase console, go to "Storage" and then "Get Started". Follow the prompts to set up storage.
+3. Set up Firebase Hosting: Run `firebase init` in the project directory and follow the prompts to set up hosting.
+4. Set up Realtime Database: In the Firebase console, go to "Database" and then "Create Database". Choose the "Realtime Database" option and follow the prompts.
+5. Set up Firebase Functions v2: Run `firebase init functions` in the project directory and follow the prompts. Make sure to choose the "Functions v2" option.
+6. Set up Firebase Storage: In the Firebase console, go to "Storage" and then "Get Started". Follow the prompts to set up storage.
+7. In the project settings, under the "General" tab scroll down to "Your apps". Then click "Generate new private key" to download a JSON file with your Firebase configuration data.
+8. Copy whats in the curly braces after `const firebaseConfig =` (apiKey, authDomain, ... measurementId). Then, go to `src\Utilities\firebase.js` and pate that information under the same `const firebaseConfig =` section.
 
 ## Setting up ChatGPT API
 
