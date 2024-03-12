@@ -22,13 +22,6 @@ const SymbolList = ({
                 selectedSymbols[header] === symbol.id ? null : symbol.id,
             }));
           }}
-          // /* Changing the code to no unselect a selected symbol when re-clicked, expectin the test to fail*/
-          // onClick={() => {
-          //   setSelectedSymbols((selectedSymbols) => ({
-          //     ...selectedSymbols,
-          //     [header]: symbol.id,
-          //   }));
-          // }}
           sx={{
             maxWidth: 40,
             border:

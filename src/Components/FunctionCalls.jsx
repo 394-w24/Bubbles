@@ -18,8 +18,6 @@ const getInstructions = async (url) => {
 
     // Now await the result of getGPT
     const res = await getGPT(key, url);
-    // console.log(res);
-    // console.log(1);
 
     // This return value will be wrapped in a Promise because the function is async
     return res.split(",");

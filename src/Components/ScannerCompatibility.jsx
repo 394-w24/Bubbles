@@ -71,7 +71,6 @@ const ScannerCompatibility = ({ user }) => {
   // Function to handle file upload (e.g., from input field)
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
-    // console.log(file);
     try {
       setProcessingImage(true);
       const base64Image = await getBase64(file);

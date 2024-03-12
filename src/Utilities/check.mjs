@@ -74,6 +74,5 @@ function check(lst1, lst2) {
   return instruction;
 }
 
-// console.log(check([8,17],[7,17]))
 
 export default check;

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Symbols.css";
 import "./Translations.css";
-import Header from "./Header";
-import NavBar from "./NavBar";
 import SymbolList from "./SymbolList";
 import data from "../../data/symbol.json";
 

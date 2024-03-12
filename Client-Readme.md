@@ -2,7 +2,7 @@
 
 ## Description
 
-A brief description of what the project does.
+An app to identify laundry tags and check washing and drying compatibility.
 
 ## Getting Started
 
