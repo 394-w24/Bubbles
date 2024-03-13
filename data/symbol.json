@@ -2,12 +2,6 @@
   "washing": [
     {
       "url": "/images/symbols/0.svg",
-      "id": -1,
-      "alt": "A washing symbol",
-      "translation": "N/A"
-    },
-    {
-      "url": "/images/symbols/0.svg",
       "id": 0,
       "alt": "A washing symbol",
       "translation": "Machine Wash at or below 95°C/203°F!"
